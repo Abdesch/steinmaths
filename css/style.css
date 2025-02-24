@@ -148,4 +148,46 @@ nav ul .dropdown {
     outline: none;
     /* Supprime la bordure bleue au clic */
     text-decoration: underline;
-    /*
+    /* Ajoute un soulignement */
+}
+
+.download-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.download-button:hover {
+    background-color: darkgreen;
+}
+
+details>summary:first-of-type {
+    list-style: none;
+}
+
+details>summary:first-of-type::before {
+    content: "▼ ";
+    font-size: 1em;
+}
+
+details[open]>summary:first-of-type::before {
+    content: "▲ ";
+}
+
+/* Style pour l'image à l'intérieur du bouton de téléchargement */
+.download-button img {
+    width: 32px;
+    /* Ajuste la taille de l'image */
+    height: 32px;
+    vertical-align: middle;
+    /* Aligne verticalement l'image */
+}
