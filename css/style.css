@@ -101,6 +101,12 @@ nav ul .dropdown {
 }
 
 
+
+
+
+
+
+
 /* Styles pour la page 2BACSM */
 #2bacsm-content {
     padding: 20px;
@@ -117,10 +123,10 @@ nav ul .dropdown {
     margin-bottom: 20px;
 }
 
-.section-container details {
+/*.section-container details {
     border-bottom: 1px solid red;
     padding: 10px 0;
-}
+}*/
 
 .section-container summary {
     cursor: pointer;
@@ -146,4 +152,17 @@ nav ul .dropdown {
 
 .download-button:hover {
     background-color: darkgreen;
+}
+
+details > summary:first-of-type {
+  list-style: none;
+}
+
+details > summary:first-of-type::before {
+  content: "▼ ";
+  font-size: 1em;
+}
+
+details[open] > summary:first-of-type::before {
+  content: "▲ ";
 }
