@@ -1,3 +1,4 @@
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Style de l'en-tête */
 header {
     background-color: #333;
     color: white;
@@ -12,28 +14,72 @@ header {
     text-align: center;
 }
 
+/* Style du menu principal */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    margin: 0;
 }
 
 nav li {
-    display: inline;
-    margin: 0 1em;
+    position: relative;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0.5em 1em;
+    padding: 15px 20px;
+    display: block;
 }
 
+/* Style du menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Afficher le menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style du contenu principal */
 main {
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
+/* Style du pied de page */
 footer {
     background-color: #333;
     color: white;
