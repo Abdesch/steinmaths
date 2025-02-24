@@ -191,3 +191,12 @@ details[open]>summary:first-of-type::before {
     vertical-align: middle;
     /* Aligne verticalement l'image */
 }
+
+.download-button img::isPdfIcon {
+    align-items: rigth;
+    width: 24px;
+    /* Ajuste la taille de l'image */
+    height: 24px;
+    vertical-align: middle;
+    /* Aligne verticalement l'image */
+}
