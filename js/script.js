@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const accordionSections = document.querySelectorAll('.accordion-section');
 
