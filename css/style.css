@@ -73,3 +73,50 @@ nav ul .dropdown {
     text-align: left;
     width: auto;
 }
+
+/* Ajout de style pour les icônes de réseaux sociaux et de recherche */
+.social-icons {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: flex-end; /* Alignement à droite */
+    margin-left: auto; /* Pousse les icônes vers la droite */
+    padding-right: 20px; /* Ajoute un peu d'espace à droite */
+}
+
+.social-icons a {
+    display: inline-block; /* Permet de contrôler la taille et la marge */
+    margin-left: 10px; /* Espace entre les icônes */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: white; /* Couleur des icônes */
+    font-size: 20px; /* Taille des icônes */
+    transition: color 0.3s ease; /* Transition douce de la couleur */
+}
+
+.social-icons a:hover {
+    color: #ddd; /* Couleur plus claire au survol */
+}
+
+.search-icon {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    color: white; /* Couleur de l'icône */
+    font-size: 20px; /* Taille de l'icône */
+    margin-left: 20px; /* Espace à gauche de l'icône */
+    cursor: pointer; /* Change le curseur en main pour indiquer que c'est cliquable */
+    transition: color 0.3s ease; /* Transition douce de la couleur */
+}
+
+.search-icon:hover {
+    color: #ddd; /* Couleur plus claire au survol */
+}
+
+/* Ajustement du menu pour faire de la place aux icônes */
+nav ul {
+    justify-content: flex-start; /* Aligne les éléments du menu à gauche */
+}
+
+nav {
+    display: flex; /* Utilise flexbox pour aligner le menu, les icônes sociales et l'icône de recherche */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 10px 0; /* Ajoute un peu d'espace en haut et en bas */
+}
