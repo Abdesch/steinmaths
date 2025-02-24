@@ -116,13 +116,19 @@ nav ul .dropdown {
 }
 
 .section-table td {
-    border: 2px solid red; /* Bordure rouge pour chaque cellule */
-    padding: 10px; /* Ajoute de l'espace à l'intérieur des cellules */
+    padding: 0; /* Ajoute de l'espace à l'intérieur des cellules */
 }
 
-.section-table details {
-    padding: 0; /* Supprime le padding par défaut des details (optionnel) */
+.section-container {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
 }
+
+/*.section-container details {
+    border-bottom: 1px solid red;
+    padding: 10px 0;
+}*/
 
 .section-container summary {
     cursor: pointer;
