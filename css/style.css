@@ -166,3 +166,11 @@ details > summary:first-of-type::before {
 details[open] > summary:first-of-type::before {
   content: "▲ ";
 }
+
+/* Style pour l'image à l'intérieur du bouton de téléchargement */
+.download-button img {
+    width: 20px; /* Ajuste la taille de l'image */
+    height: 20px;
+    vertical-align: middle; /* Aligne verticalement l'image */
+    margin-right: 5px; /* Ajoute un peu d'espace entre l'image et le texte */
+}
