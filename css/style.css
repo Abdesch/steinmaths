@@ -142,12 +142,13 @@ nav ul .dropdown {
 
 .download-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px; /* Réduit le rembourrage horizontal */
     background-color: green;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin: 0 10px;
+    font-size: 14px; /* Ajuste la taille de la police */
 }
 
 .download-button:hover {
