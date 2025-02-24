@@ -1,10 +1,10 @@
 /* Style du menu principal */
 nav {
-    background-color: #333;
-    display: flex; /* Active Flexbox sur le conteneur nav */
-    align-items: center; /* Aligne verticalement les éléments */
-    justify-content: space-between; /* Répartit l'espace entre les éléments */
-    padding: 10px 20px; /* Ajoute un peu d'espace autour du contenu */
+    background-color: #0D47A1; /* Bleu foncé */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligne les éléments à gauche, sauf si override */
+    padding: 10px 20px;
 }
 
 nav ul {
@@ -12,8 +12,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
-    background-color: #444;
+    justify-content: flex-start; /* Aligne les éléments du menu à gauche */
+    background-color: #1E3A8A; /* Bleu foncé */
 }
 
 nav li {
@@ -22,7 +22,7 @@ nav li {
 
 /* Style des liens du menu */
 nav a {
-    color: white;
+    color: white; /* Garde le texte en blanc pour contraster avec le bleu foncé */
     text-decoration: none;
     padding: 15px 20px;
     display: block;
@@ -33,10 +33,11 @@ nav a {
 .social-icons {
     display: flex;
     align-items: center;
+    margin-left: auto; /* Pousse les icônes sociales vers la droite */
 }
 
 .social-icons a {
-    color: white;
+    color: white; /* Garde le texte en blanc pour contraster avec le bleu foncé */
     text-decoration: none;
     margin-left: 10px;
     font-size: 20px;
@@ -44,7 +45,7 @@ nav a {
 
 /* Style de l'icône de recherche */
 .search-icon {
-    color: white;
+    color: white; /* Garde le texte en blanc pour contraster avec le bleu foncé */
     font-size: 20px;
     cursor: pointer;
     margin-right: 20px;
