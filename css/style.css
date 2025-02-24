@@ -200,3 +200,40 @@ details[open]>summary:first-of-type::before {
     vertical-align: middle;
     /* Aligne verticalement l'image */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Existing styles from previous steps */
+
+/* New styles for the 2BACSX page */
+.section-container {
+    border: 2px solid red;
+    /* Red border as requested */
+    margin-bottom: 20px;
+}
+
+summary {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style for the pink bars */
+.pink-bar {
+    background-color: magenta;
+    /* Magenta color for the pink bars */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
