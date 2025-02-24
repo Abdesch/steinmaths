@@ -133,6 +133,7 @@ nav ul .dropdown {
     font-weight: bold;
     padding: 10px;
     outline: none; /* Supprime la bordure bleue au clic */
+    text-decoration: underline; /* Ajoute un soulignement */
 }
 
 .download-links {
