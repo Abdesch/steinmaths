@@ -99,3 +99,51 @@ nav ul .dropdown {
     text-align: left;
     width: auto;
 }
+
+
+/* Styles pour la page 2BACSM */
+#2bacsm-content {
+    padding: 20px;
+}
+
+#2bacsm-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-container {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.section-container details {
+    border-bottom: 1px solid red;
+    padding: 10px 0;
+}
+
+.section-container summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    outline: none; /* Supprime la bordure bleue au clic */
+}
+
+.download-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.download-button:hover {
+    background-color: darkgreen;
+}
