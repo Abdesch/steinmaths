@@ -100,13 +100,6 @@ nav ul .dropdown {
     width: auto;
 }
 
-
-
-
-
-
-
-
 /* Styles pour la page 2BACSM */
 #2bacsm-content {
     padding: 20px;
@@ -117,16 +110,19 @@ nav ul .dropdown {
     margin-bottom: 20px;
 }
 
-.section-container {
-    border: 2px solid red;
-    padding: 10px;
-    margin-bottom: 20px;
+.section-table {
+    width: 100%; /* Le tableau occupe toute la largeur */
+    border-collapse: collapse; /* Fusionne les bordures des cellules */
 }
 
-/*.section-container details {
-    border-bottom: 1px solid red;
-    padding: 10px 0;
-}*/
+.section-table td {
+    border: 2px solid red; /* Bordure rouge pour chaque cellule */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur des cellules */
+}
+
+.section-table details {
+    padding: 0; /* Supprime le padding par défaut des details (optionnel) */
+}
 
 .section-container summary {
     cursor: pointer;
