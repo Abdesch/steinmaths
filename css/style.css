@@ -158,21 +158,4 @@ nav ul .dropdown {
 }
 
 details > summary:first-of-type {
-  list-style: none;
-}
-
-details > summary:first-of-type::before {
-  content: "▼ ";
-  font-size: 1em;
-}
-
-details[open] > summary:first-of-type::before {
-  content: "▲ ";
-}
-
-/* Style pour l'image à l'intérieur du bouton de téléchargement */
-.download-button img {
-    width: 32px; /* Ajuste la taille de l'image */
-    height: 32px;
-    vertical-align: middle; /* Aligne verticalement l'image */
-}
+  list-
