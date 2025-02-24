@@ -29,14 +29,36 @@
             padding: 10px;
             margin-bottom: 20px;
         }
+
+        .pdf-button { /* Style for all PDF button to load inline*/
+            display: inline-flex;
+
+        }
+
+        /* Style for the links */
+        #2bacsx-content a:link {
+        color: red;
+        }
+
+        #2bacsx-content a:visited {
+        color: green;
+        }
+
+        #2bacsx-content a:hover {
+        color: hotpink;
+        }
+
+        #2bacsx-content a:active {
+        color: blue;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <!-- Copy your navigation bar HTML here (from index.html) -->
+        <!-- Ton menu de navigation (copié depuis index.html) -->
         <nav>
-            <div class="search-icon">
+           <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
@@ -96,263 +118,977 @@
 
             <div class="pink-bar">Test diagnostique</div>
             <div class="section-container">
-                <details>
+                <details class="accordion-section">
                     <summary>Modèle 1</summary>
                     <!-- Content for Modèle 1 -->
                 </details>
             </div>
 
             <div class="pink-bar">Cours (semestre 01)</div>
-            <div class="section-container">
-                <details>
-                    <summary>01- Limites et continuité</summary>
-                    <!-- Content for 01- Limites et continuité -->
-                </details>
-                <details>
-                    <summary>02- Dérivation</summary>
-                    <!-- Content for 02- Dérivation -->
-                </details>
-                <details>
-                    <summary>Le résumé : Continuité + Dérivation ; D.S + correction</summary>
-                    <!-- Content for Le résumé : Continuité + Dérivation ; D.S + correction -->
-                </details>
-                <details>
-                    <summary>03- Etude des fonction</summary>
-                    <!-- Content for 03- Etude des fonction -->
-                </details>
-                <details>
-                    <summary>04- Les suite numériques</summary>
-                    <!-- Content for 04- Les suite numériques -->
-                </details>
-                <details>
-                    <summary>05- Fonctions Primitives</summary>
-                    <!-- Content for 05- Fonctions Primitives -->
-                </details>
-                <details>
-                    <summary>06- Fonctions logarithmiques</summary>
-                    <!-- Content for 06- Fonctions logarithmiques -->
-                </details>
-                <details>
-                    <summary>07- Nombres complexes</summary>
-                    <!-- Content for 07- Nombres complexes -->
-                </details>
-            </div>
+            <table class="section-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>01- Limites et continuité</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>02- Dérivation</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Le résumé : Continuité + Dérivation ; D.S + correction</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>03- Etude des fonction</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>05- Fonctions Primitives</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>06- Fonctions logarithmiques</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>07- Nombres complexes</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
             <div class="pink-bar">Cours (semestre 02)</div>
-            <div class="section-container">
-                <details>
-                    <summary>08- Fonctions Exponentielles</summary>
-                    <!-- Content for 08- Fonctions Exponentielles -->
-                </details>
-                <details>
-                    <summary>09- Equations différentielles</summary>
-                    <!-- Content for 09- Equations différentielles -->
-                </details>
-                <details>
-                    <summary>10- Calcul intégral</summary>
-                    <!-- Content for 10- Calcul intégral -->
-                </details>
-                <details>
-                    <summary>11- la géométrie dans l'espace - Produit scalaire -</summary>
-                    <!-- Content for 11- la géométrie dans l'espace - Produit scalaire - -->
-                </details>
-                <details>
-                    <summary>12- Produit vectoriel</summary>
-                    <!-- Content for 12- Produit vectoriel -->
-                </details>
-                <details>
-                    <summary>13- Dénombrement et probabilités</summary>
-                    <!-- Content for 13- Dénombrement et probabilités -->
-                </details>
-            </div>
+            <table class="section-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>08- Fonctions Exponentielles</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>09- Equations différentielles</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>10- Calcul intégral</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>11- la géométrie dans l'espace - Produit scalaire -</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>12- Produit vectoriel</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>13- Dénombrement et probabilités</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
             <!-- 1. Exercice (semestre 1 et 2) -->
             <div class="pink-bar">Exercice (semestre 1 et 2)</div>
-            <div class="section-container">
-                <details>
-                    <summary>Série 00</summary>
-                </details>
-                <details>
-                    <summary>Série 01</summary>
-                </details>
-                <details>
-                    <summary>Série 02</summary>
-                </details>
-                <details>
-                    <summary>Série 03</summary>
-                </details>
-                <details>
-                    <summary>Série 04</summary>
-                </details>
-                <details>
-                    <summary>Série 05</summary>
-                </details>
-                <details>
-                    <summary>Série 06</summary>
-                </details>
-                <details>
-                    <summary>Série 07</summary>
-                </details>
-                <details>
-                    <summary>Problème sur les fonctions logarithmiques et exponentielles</summary>
-                </details>
-                <details>
-                    <summary>Série 08</summary>
-                </details>
-                <details>
-                    <summary>Série 09</summary>
-                </details>
-                <details>
-                    <summary>Série 10</summary>
-                </details>
-                <details>
-                    <summary>Série 11</summary>
-                </details>
-                <details>
-                    <summary>Série 12</summary>
-                </details>
-                <details>
-                    <summary>Série 13</summary>
-                </details>
-            </div>
+            <table class="section-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 00</summary>
+                                      <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 01</summary>
+                                      <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 02</summary>
+                                     <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 03</summary>
+                                        <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 04</summary>
+                                        <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 05</summary>
+                                        <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 06</summary>
+                                       <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 07</summary>
+                                        <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Problème sur les fonctions logarithmiques et exponentielles</summary>
+                                      <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 08</summary>
+                                      <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 09</summary>
+                                     <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 10</summary>
+                                       <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 11</summary>
+                                      <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 12</summary>
+                                      <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Série 13</summary>
+                                       <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
             <!-- 2. DEVOIRS SURVEILLES (semestre 1) -->
             <div class="pink-bar">DEVOIRS SURVEILLES (semestre 1)</div>
-            <div class="section-container">
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 01 - Modèle 01 -
-                        <a href="#">Télécharger le D.S</a>
-                    </summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 01 - Modèle 02 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 01 - Modèle 03 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 01 - Modèle 04 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 02 - Modèle 01 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 02 - Modèle 02 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 03 - Modèle 01 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 03 - Modèle 02 -</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 03 - Modèle 03 -</summary>
-                </details>
-            </div>
+            <table class="section-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>DEVOIRS SURVEILLES N° 01 - Modèle 01 -</summary>
+                                     <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 01 - Modèle 02 -</summary>
+                                 <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 01 - Modèle 03 -</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 01 - Modèle 04 -</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 02 - Modèle 01 -</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 02 - Modèle 02 -</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 03 - Modèle 01 -</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 03 - Modèle 02 -</summary>
+                                   <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 03 - Modèle 03 -</summary>
+                                 <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <!-- 3. DEVOIRS SURVEILLES (semestre 2) -->
+    <div class="pink-bar">DEVOIRS SURVEILLES (semestre 2)</div>
+        <table class="section-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 01 - Modèle 01 -</summary>
+                                 <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 02</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>DEVOIRS SURVEILLES N° 03 - Modèle 01 -</summary>
+                                     <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-            <!-- 3. DEVOIRS SURVEILLES (semestre 2) -->
-            <div class="pink-bar">DEVOIRS SURVEILLES (semestre 2)</div>
-            <div class="section-container">
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 01 - Modèle 01 -
-                        <a href="#">Télécharger le D.S</a>
-                    </summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 02</summary>
-                </details>
-                <details>
-                    <summary>DEVOIRS SURVEILLES N° 03 - Modèle 01 -</summary>
-                </details>
-            </div>
+        <!-- 4. Examens Blanc -->
+        <div class="pink-bar">Examens Blanc</div>
+        <table class="section-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Modèle 1</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Modèle 2</summary>
+                                   <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Modèle 03</summary>
+                                <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-            <!-- 4. Examens Blanc -->
-            <div class="pink-bar">Examens Blanc</div>
-            <div class="section-container">
-                <details>
-                    <summary>Modèle 1
-                         <a href="#">Télécharger examen blanc</a>
-                    </summary>
-                </details>
-                <details>
-                    <summary>Modèle 2</summary>
-                </details>
-                <details>
-                    <summary>Modèle 03</summary>
-                </details>
-            </div>
+        <!-- 5. Examens Nationaux avec corrections -->
+        <div class="pink-bar">Examens Nationaux avec corrections</div>
+        <table class="section-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2024 + correction</summary>
+                                 <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen rattrapage 2023 + correction</summary>
+                                 <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2022 + correction</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
 
-            <!-- 5. Examens Nationaux avec corrections -->
-            <div class="pink-bar">Examens Nationaux avec corrections</div>
-            <div class="section-container">
-                <details>
-                    <summary>Examen national Normale 2024 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2023 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen rattrapage 2022 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2022 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2021 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2020 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2019 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2018 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2017 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2016 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2015 -1 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2014 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2013 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2012 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2011 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2010 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2009 + correction</summary>
-                </details>
-                <details>
-                    <summary>Examen national Normale 2008 + correction</summary>
-                </details>
+<img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen rattrapage 2022 + correction</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2021 + correction</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2020 + correction</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2019 + correction</summary>
+                                 <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2018 + correction</summary>
+                                <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2017 + correction</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section-container">
+                            <details class="accordion-section">
+                                <summary>Examen national Normale 2016 + correction</summary>
+                                  <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                        Télécharger
+                                           <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                            </details>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-            </div>
+    <div class="pink-bar">Videos -Cours</div>
+    <div class="pink-bar">Videos -Exercices</div>
+</main>
 
-            <!-- 6. & 7 Videos - Cours & Exercices -->
-            <div class="pink-bar">Videos -Cours</div>
-            <div class="pink-bar">Videos -Exercices</div>
-        </section>
-    </main>
+<footer>
+    <!-- Copy your footer here (from index.html) -->
+    <p>© 2024 Mon Site Web</p>
+</footer>
 
-    <footer>
-        <!-- Copy your footer here (from index.html) -->
-        <p>© 2024 Mon Site Web</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
+
 </html>
