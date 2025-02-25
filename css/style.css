@@ -114,7 +114,8 @@ nav ul .dropdown {
 }
 
 .section-container {
-    border: 2px solid red; /* Utile pour le debug, à retirer en production */
+    border: 2px solid red;
+    /* Utile pour le debug, à retirer en production */
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -124,7 +125,8 @@ nav ul .dropdown {
     font-weight: bold;
     padding: 10px;
     outline: none;
-    text-decoration: underline;
+    /* text-decoration: underline;
+    // Retirer le soulignement du summary, pour la clareté
 }
 
 details>summary:first-of-type {
@@ -146,15 +148,18 @@ details[open]>summary:first-of-type::before {
 }
 
 .download-button {
-    display: inline-flex; /* Utiliser flexbox pour aligner le texte et l'image */
-    align-items: center; /* Centrer verticalement le texte et l'image */
+    display: inline-flex;
+    /* Utiliser flexbox pour aligner le texte et l'image */
+    align-items: center;
+    /* Centrer verticalement le texte et l'image */
     padding: 10px 20px;
     background-color: green;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin: 0 10px;
-    font-size: 16px; /* Ajuster la taille de la police au besoin */
+    font-size: 16px;
+    /* Ajuster la taille de la police au besoin */
 }
 
 .download-button:hover {
@@ -162,7 +167,9 @@ details[open]>summary:first-of-type::before {
 }
 
 .download-button img {
-    width: 20px; /* Ajuster la taille de l'image au besoin */
+    width: 20px;
+    /* Ajuster la taille de l'image au besoin */
     height: 20px;
-    margin-left: 5px; /* Ajouter un espacement entre le texte et l'image */
+    margin-left: 5px;
+    /* Ajouter un espacement entre le texte et l'image */
 }
