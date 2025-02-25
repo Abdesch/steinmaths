@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2BACSECO - Cours et Exercices</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionSections = document.querySelectorAll('.accordion-section');
+    
+            accordionSections.forEach(section => {
+                section.addEventListener('toggle', function() {
+                    if (this.open) { // Si cette section est ouverte
+                        // Fermer toutes les autres sections
+                        accordionSections.forEach(otherSection => {
+                            if (otherSection !== this && otherSection.open) {
+                                otherSection.open = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <style>
         /* Custom styles for the 2BACSX page */
         .section-container {
@@ -29,14 +51,38 @@
             padding: 10px;
             margin-bottom: 20px;
         }
+
+        .pdf-button {
+            /* Style for all PDF button to load inline*/
+            display: inline-flex;
+
+        }
+
+        /* Style for the links */
+        #2bacsx-content a:link {
+            color: red;
+        }
+
+        #2bacsx-content a:visited {
+            color: green;
+        }
+
+        #2bacsx-content a:hover {
+            color: hotpink;
+        }
+
+        #2bacsx-content a:active {
+            color: blue;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
         <!-- Ton menu de navigation (copié depuis index.html) -->
         <nav>
-           <div class="search-icon">
+            <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
@@ -92,21 +138,20 @@
     </header>
 
     <main>
-        Section id="2bacsx-content">
-             div class="pink-bar">Test diagnostique div>
-            div class="section-container">
-                details class="accordion-section">
-                      summary>Modèle 1 Summary>
-                                
-                                <div class="download-links">
-                                        <a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger>
-                div>
-                     details>
-            Section>
+         <section id="2bacsx-content">
 
-            <Section id="2bacsx-content">
+            div class="pink-bar">Test diagnostique div>
+            <div class="section-container">
+                <details class="accordion-section">
+                    summary>Modèle 1 Summary>
+                     div class="download-links">
+                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
+ div>
+                    details>
+            Section>
+             <Section id="2bacsx-content">
                     Div class="pink-bar">Exercice (semestre 1 et 2) Div>
-           <table class="section-table">
+           table class="section-table">
             tbody>
                 Tr>
                     Td>
@@ -114,433 +159,224 @@
                            details class="accordion-section">
                               summary>Série 00 Summary>
                               Div class="download-links">
-                        a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger 
-                       A>
-                        Div>
-                        Tr>
-                        Td>
+                                 a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger  a>
+                                  
+                         Div>
                         details>
                          Div>
-                 Tr>
+                 Td>
+                   Tr>
 
-           
-               Tr>
+                  Tr>
                     Td>
-               Div class="section-container">
+                      Div class="section-container">
                            details class="accordion-section">
-                              summary>Série 01 Summary>
-                                <div class="download-links">
-                        a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger Div>
-
-                        Div>
-                    details>
-                Div>
-               Td>
-             Tr>
-            
-
-            
-               Tr>
-                    Td>
-               Div class="section-container">
+                            summary>Série 01 Summary>
+                             Div class="download-links">
+                              a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+                             Div>
+                        details>
+                          Div>
+                         Td>
+                      Tr>
+                      Tr>
+                        Td>
+                          Div class="section-container">
                            details class="accordion-section">
-                              summary>Série 02 Summary>
-                              Div class="download-links">
-                         a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger Div>
-                         Div>
-                    details>
-                Div>
-               Td>
-             Tr>
+                            summary>Série 02 Summary>
+                            Div class="download-links">
+                              a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger  a>
+                            Div>
+                        details>
+                          Div>
+                         Td>
+                       Tr>
 
-            
-               Tr>
-                    Td>
-               Div class="section-container">
-                           details class="accordion-section">
+                        Tr>
+                        Td>
+                           Div class="section-container">
+                            details class="accordion-section">
                               summary>Série 03 Summary>
                                  Div class="download-links">
-                                    a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger Div>
-                                Div>
-                    details>
-                Div>
-               Td>
-             Tr>
+                                     a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+                                  Div>
+                            details>
+                          Div>
+                         Td>
+                       Tr>
 
-             
-               Tr>
-                    Td>
-               Div class="section-container">
+                         Tr>
+                            Td>
+                               Div class="section-container">
                            details class="accordion-section">
-                              summary>Série 04 Summary>
-                               Div class="download-links">
-                                    a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger Div>
-                                 Div>
-                    details>
-                 Div>
-               Td>
-             Tr>
+                            summary>Série 04 Summary>
+                             Div class="download-links">
+                              a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+                            Div>
+                        details>
+                           Div>
+                         Td>
+                       Tr>
 
-            
-               Tr>
-                    Td>
-               Div class="section-container">
-                           details class="accordion-section">
+                      Tr>
+                        Td>
+                           Div class="section-container">
+                            details class="accordion-section">
                               summary>Série 05 Summary>
                               Div class="download-links">
-                                  a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger Div>
-                                 Div>
-                    details>
-                  Div>
-                Td>
-              Tr>
-                Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 06 Summary>
-                      Div class="download-links">
-                        a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-          Div>
-                Td>
-              Tr>
-               Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 07 Summary>
-                       Div class="download-links">
-                        a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-         Div>
-                Td>
-              Tr>
+                                   a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+                                  Div>
+                            details>
+                            Div>
+                         Td>
+                      Tr>
+            
               Div class="section-container">
-    details class="accordion-section">
-        summary>Problème sur les fonctions logarithmiques et exponentielles Summary>
-         Div class="download-links">
-            a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-     Div>
-                Td>
-              Tr>
-               Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 08 Summary>
-                         Div class="download-links">
-                            a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-       Div>
-                Td>
-              Tr>
-                Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 09 Summary>
-                        Div class="download-links">
-                         a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-        Div>
-                Td>
-              Tr>
-              Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 10 Summary>
-                       Div class="download-links">
-                         a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-       Div>
-                Td>
-              Tr>
-                Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 11 Summary>
-                        Div class="download-links">
-                         a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
+        <details class="accordion-section">
+          summary>Problème sur les fonctions logarithmiques et exponentielles Summary>
+               Div class="download-links">
+                  a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+                 Div>
     details>
       Div>
                 Td>
               Tr>
-                Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 12 Summary>
-                       Div class="download-links">
-                        a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-      Div>
+
+                    Tr>
                 Td>
-              Tr>
-                Div class="section-container">
-                    details class="accordion-section">
-                      summary>Série 13 Summary>
-                        Div class="download-links">
-                          a href="#"><img src="img/btn.png" alt="Télécharger le cours">Télécharger a>
-        Div>
-    details>
-         Div>
-                Td>
-              Tr>
-            tbody>
-        Table>
- section>
-   
-        <Section id="2bacsx-content">
-            Div class="pink-bar">DEVOIRS SURVEILLES (semestre 1) Div>
-           <table class="section-table">
-            tbody>
-                Tr>
-                    Td>
-                Div class="section-container">
+                   Div class="section-container">
                            details class="accordion-section">
-                              summary>DEVOIRS SURVEILLES N° 01 - Modèle 01 - Summary>
-                                div class="download-links">
-                                     a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                Div>
-                            Details>
+                                 summary>Série 06 Summary>
+                                Div class="download-links">
+                                      a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+        Div>
+                            details>
                         Div>
                      Td>
-                 Tr>
-
-                 Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 01 - Modèle 02 - Summary>
-                        Div class="download-links">
-                          a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                        Div>
-                    details>
-                  Div>
-                 Td>
-              Tr>
-                Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 01 - Modèle 03 - Summary>
-                        Div class="download-links">
-                          a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                        Div>
-                    details>
-                  Div>
-                Td>
-              Tr>
-                Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 01 - Modèle 04 - Summary>
-                        Div class="download-links">
-                           a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                        Div>
-                    details>
-                  Div>
-                Td>
-              Tr>
-                Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 02 - Modèle 01 - Summary>
-                         Div class="download-links">
-                           a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                         Div>
-                    details>
-                    Div>
-                Td>
-              Tr>
-              Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 02 - Modèle 02 - Summary>
-                    Div class="download-links">
-                        a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-        Div>
-    details>
-       Div>
-                Td>
+               Tr>
+               Div class="section-container">
+                           details class="accordion-section">
+                              summary>Série 07 Summary>
+                                   Div class="download-links">
+                                      a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+         Div>
+                        details>
+                      Div>
+                    Td>
               Tr>
                Tr>
                 Td>
                   Div class="section-container">
                     details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 03 - Modèle 01 - Summary>
+                      summary>Série 08 Summary>
                        Div class="download-links">
-                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
+                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
                         Div>
                     details>
-                     Div>
-                Td>
+                      Div>
+                    Td>
               Tr>
                Tr>
                 Td>
                   Div class="section-container">
                     details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 03 - Modèle 02 - Summary>
-                        Div class="download-links">
-                        a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-        Div>
-    details>
-       Div>
-                Td>
-              Tr>
-               Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>DEVOIRS SURVEILLES N° 03 - Modèle 03 - Summary>
-                      Div class="download-links">
-                        a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
+                      summary>Série 09 Summary>
+                       Div class="download-links">
+                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
         Div>
     details>
          Div>
                 Td>
               Tr>
-            tbody>
-        table>
-
-<section id="2bacsx-content">
-               div class="pink-bar">Examens Nationaux avec corrections div>
-            <table class="section-table">
-                tbody>
-                    tr>
-                        td>
-                            div class="section-container">
-                                details class="accordion-section">
-                                    summary>Examen national Normale 2024 + correction Summary>
-                                        div class="download-links">
-                                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                        div>
-                            details>
-                        div>
-                    Td>
              Tr>
-
-             tr>
-                        td>
-                            div class="section-container">
-                                details class="accordion-section">
-                                    summary>Examen rattrapage 2023 + correction Summary>
-                                         div class="download-links">
-                                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                        div>
-                            details>
-                        div>
-                    Td>
-              Tr>
-
-               tr>
-                        td>
-                            div class="section-container">
-                                details class="accordion-section">
-                                    summary>Examen national Normale 2022 + correction Summary>
-                                         div class="download-links">
-                                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                         div>
-                            details>
-                        div>
-                    Td>
-              Tr>
-
-                Tr>
-                        td>
-                            div class="section-container">
-                                details class="accordion-section">
-                                    summary>Examen rattrapage 2022 + correction Summary>
-                                         div class="download-links">
-                                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                         Div>
-                            details>
-                        div>
-                    Td>
-              Tr>
-                 Tr>
-                        td>
-                            div class="section-container">
-                                details class="accordion-section">
-                                    summary>Examen national Normale 2021 + correction Summary>
-                                         div class="download-links">
-                                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                         Div>
-                            details>
-                      Div>
-                      Td>
-                Tr>
-                   Tr>
-                    Td>
-                       Div class="section-container">
-                           details class="accordion-section">
-                            summary>Examen national Normale 2020 + correction Summary>
-                         Div class="download-links">
-                          a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                         Div>
-                          details>
-                      Div>
-                    Td>
-              Tr>
-               Tr>
                     Td>
                        Div class="section-container">
                          details class="accordion-section">
-                             summary>Examen national Normale 2019 + correction Summary>
+                             summary>Série 10 Summary>
                         Div class="download-links">
-                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
+                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
                         Div>
-                        details>
-                    Div>
-                Td>
-              Tr>
-
-             
-
-           Tr>
-                    Td>
-               Div class="section-container">
-                           details class="accordion-section">
-                              summary>Examens blanc Summary>
-                                <div class="download-links">
-                             a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                         Div>
                         details>
                       Div>
                     Td>
               Tr>
+               Tr>
+                    Td>
+                      Div class="section-container">
+                        details class="accordion-section">
+                          summary>Série 11 Summary>
+                           Div class="download-links">
+                            a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+        Div>
+    details>
+        Div>
+                Td>
+              Tr>
+               Tr>
+                    Td>
+                      Div class="section-container">
+                        details class="accordion-section">
+                          summary>Série 12 Summary>
+                             Div class="download-links">
+                                a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+          Div>
+    details>
+       Div>
+                Td>
+              Tr>
+               Tr>
+                Td>
+                  Div class="section-container">
+                    details class="accordion-section">
+                      summary>Série 13 Summary>
+                      Div class="download-links">
+                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+       Div>
+    details>
+         Div>
+                Td>
+              Tr>
 
-         
+               Tr>
+                Td>
+                  Div class="section-container">
+                    details class="accordion-section">
+                      summary>Série 13 Summary>
+                         Div class="download-links">
+                           a href="#"><img src="img/pdf-icon.png" alt="Télécharger le cours">Télécharger a>
+        Div>
+    details>
+      Div>
+                Td>
+              Tr>
 
-        tbody>
-            Table>
-          Div class="pink-bar">Examens BlancsDiv>
-Section>
+            tbody>
+        Table>
+     section>
 
-<Section id="2bacsx-content">
-     Div class="pink-bar">Video -Cours Div>
-        Div class="pink-bar">Video -Exercices Div>
-Section>
+               
+        <section id="2bacsx-content">
+            <Div class="pink-bar">Videos -Cours Div>
+             Div class="pink-bar">Video -Exercices Div>
+                 /section>
+              
 
-    main>
-         Script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const accordionSections = document.querySelectorAll('.accordion-section');
+          <section id="2bacsx-content">
+            
+                </details>
+</div>
+</td>
+</tr>
+                </tbody>
+</table>
 
-        accordionSections.forEach(section => {
-            section.addEventListener('toggle', function () {
-                if (this.open) { // Si cette section est ouverte
-                    // Fermer toutes les autres sections
-                    accordionSections.forEach(otherSection => {
-                        if (otherSection !== this && otherSection.open) {
-                            otherSection.open = false;
-                        }
-                    });
-                }
-            });
-        });
-    });
-   Script>
+Main>
+  
+        Copy your footer here (from index.html) --
+        p>© 2024 Mon Site Web P>
+    footer>
+
+    ! Important now is linking css and js in tag.
+    script src="js/script.js">script>
 body>
 html>
