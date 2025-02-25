@@ -1,9 +1,11 @@
 /* Style du menu principal */
 nav {
     background-color: #0D47A1;
+    /* Bleu foncé */
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    /* Aligne les éléments à gauche, sauf si override */
     padding: 10px 20px;
 }
 
@@ -13,7 +15,9 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: flex-start;
+    /* Aligne les éléments du menu à gauche */
     background-color: #1E3A8A;
+    /* Bleu foncé */
 }
 
 nav li {
@@ -23,6 +27,7 @@ nav li {
 /* Style des liens du menu */
 nav a {
     color: white;
+    /* Garde le texte en blanc pour contraster avec le bleu foncé */
     text-decoration: none;
     padding: 15px 20px;
     display: block;
@@ -34,10 +39,12 @@ nav a {
     display: flex;
     align-items: center;
     margin-left: auto;
+    /* Pousse les icônes sociales vers la droite */
 }
 
 .social-icons a {
     color: white;
+    /* Garde le texte en blanc pour contraster avec le bleu foncé */
     text-decoration: none;
     margin-left: 10px;
     font-size: 20px;
@@ -46,6 +53,7 @@ nav a {
 /* Style de l'icône de recherche */
 .search-icon {
     color: white;
+    /* Garde le texte en blanc pour contraster avec le bleu foncé */
     font-size: 20px;
     cursor: pointer;
     margin-right: 20px;
@@ -100,7 +108,7 @@ nav ul .dropdown {
     width: auto;
 }
 
-/* Custom styles for the 2BACSX page */
+/* Styles pour la page 2BACSM */
 #2bacsm-content {
     padding: 20px;
 }
@@ -112,11 +120,14 @@ nav ul .dropdown {
 
 .section-table {
     width: 100%;
+    /* Le tableau occupe toute la largeur */
     border-collapse: collapse;
+    /* Fusionne les bordures des cellules */
 }
 
 .section-table td {
     padding: 0;
+    /* Ajoute de l'espace à l'intérieur des cellules */
 }
 
 .section-container {
@@ -125,12 +136,19 @@ nav ul .dropdown {
     margin-bottom: 20px;
 }
 
-summary {
+/*.section-container details {
+    border-bottom: 1px solid red;
+    padding: 10px 0;
+}*/
+
+.section-container summary {
     cursor: pointer;
     font-weight: bold;
     padding: 10px;
     outline: none;
+    /* Supprime la bordure bleue au clic */
     text-decoration: underline;
+    /* Ajoute un soulignement */
 }
 
 .download-links {
@@ -168,6 +186,17 @@ details[open]>summary:first-of-type::before {
 /* Style pour l'image à l'intérieur du bouton de téléchargement */
 .download-button img {
     width: 32px;
+    /* Ajuste la taille de l'image */
     height: 32px;
     vertical-align: middle;
+    /* Aligne verticalement l'image */
+}
+
+.download-button img::isPdfIcon {
+    align-items: rigth;
+    width: 24px;
+    /* Ajuste la taille de l'image */
+    height: 24px;
+    vertical-align: middle;
+    /* Aligne verticalement l'image */
 }
