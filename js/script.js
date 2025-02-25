@@ -1,15 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const accordionSections = document.querySelectorAll('.accordion-section');
+    const sectionTables = document.querySelectorAll('.section-table');
 
-    accordionSections.forEach(section => {
-        section.addEventListener('toggle', function() {
-            if (this.open) {
-                accordionSections.forEach(otherSection => {
-                    if (otherSection !== this && otherSection.open) {
-                        otherSection.open = false;
-                    }
-                });
-            }
+    sectionTables.forEach(table => {
+        const accordionSections = table.querySelectorAll('.accordion-section');
+
+        accordionSections.forEach(section => {
+            section.addEventListener('toggle', function() {
+                if (this.open) {
+                    accordionSections.forEach(otherSection => {
+                        if (otherSection !== this && otherSection.open) {
+                            otherSection.open = false;
+                        }
+                    });
+                }
+            });
         });
     });
 });
