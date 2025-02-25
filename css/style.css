@@ -107,9 +107,9 @@ nav ul .dropdown {
 
 /* Styles pour l'accordéon */
 .section-table {
-    width: 100%;
+    width: fit-content;/*Ajouter cette ligne */
+    margin: 0 auto;/*Ajouter cette ligne */
     border-collapse: collapse;
-
 }
 
 .section-table td {
