@@ -1,11 +1,9 @@
 /* Style du menu principal */
 nav {
     background-color: #0D47A1;
-    /* Bleu foncé */
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* Aligne les éléments à gauche, sauf si override */
     padding: 10px 20px;
 }
 
@@ -15,51 +13,41 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: flex-start;
-    /* Aligne les éléments du menu à gauche */
     background-color: #1E3A8A;
-    /* Bleu foncé */
 }
 
 nav li {
     position: relative;
 }
 
-/* Style des liens du menu */
 nav a {
     color: white;
-    /* Garde le texte en blanc pour contraster avec le bleu foncé */
     text-decoration: none;
     padding: 15px 20px;
     display: block;
     font-size: 16px;
 }
 
-/* Style des icônes sociales */
 .social-icons {
     display: flex;
     align-items: center;
     margin-left: auto;
-    /* Pousse les icônes sociales vers la droite */
 }
 
 .social-icons a {
     color: white;
-    /* Garde le texte en blanc pour contraster avec le bleu foncé */
     text-decoration: none;
     margin-left: 10px;
     font-size: 20px;
 }
 
-/* Style de l'icône de recherche */
 .search-icon {
     color: white;
-    /* Garde le texte en blanc pour contraster avec le bleu foncé */
     font-size: 20px;
     cursor: pointer;
     margin-right: 20px;
 }
 
-/* Menu déroulant */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -88,12 +76,10 @@ nav a {
     background-color: #f1f1f1;
 }
 
-/* Afficher le menu au survol */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Correction pour bien aligner les sous-menus */
 nav ul li {
     display: inline-block;
 }
@@ -102,13 +88,12 @@ nav ul .dropdown {
     display: inline-block;
 }
 
-/* Correction pour éviter que les sous-menus se chevauchent */
 .dropdown-content {
     text-align: left;
     width: auto;
 }
 
-/* Styles pour la page 2BACSM */
+/* Styles pour le contenu principal */
 #2bacsm-content {
     padding: 20px;
 }
@@ -118,37 +103,41 @@ nav ul .dropdown {
     margin-bottom: 20px;
 }
 
+/* Styles pour l'accordéon */
 .section-table {
     width: 100%;
-    /* Le tableau occupe toute la largeur */
     border-collapse: collapse;
-    /* Fusionne les bordures des cellules */
 }
 
 .section-table td {
     padding: 0;
-    /* Ajoute de l'espace à l'intérieur des cellules */
 }
 
 .section-container {
-    border: 2px solid red;
+    border: 2px solid red; /* Utile pour le debug, à retirer en production */
     padding: 10px;
     margin-bottom: 20px;
 }
-
-/*.section-container details {
-    border-bottom: 1px solid red;
-    padding: 10px 0;
-}*/
 
 .section-container summary {
     cursor: pointer;
     font-weight: bold;
     padding: 10px;
     outline: none;
-    /* Supprime la bordure bleue au clic */
     text-decoration: underline;
-    /* Ajoute un soulignement */
+}
+
+details>summary:first-of-type {
+    list-style: none;
+}
+
+details>summary:first-of-type::before {
+    content: "▼ ";
+    font-size: 1em;
+}
+
+details[open]>summary:first-of-type::before {
+    content: "▲ ";
 }
 
 .download-links {
@@ -170,44 +159,15 @@ nav ul .dropdown {
     background-color: darkgreen;
 }
 
-details>summary:first-of-type {
-    list-style: none;
-}
-
-details>summary:first-of-type::before {
-    content: "▼ ";
-    font-size: 1em;
-}
-
-details[open]>summary:first-of-type::before {
-    content: "▲ ";
-}
-
-/* Style pour l'image à l'intérieur du bouton de téléchargement */
 .download-button img {
     width: 32px;
-    /* Ajuste la taille de l'image */
     height: 32px;
     vertical-align: middle;
-    /* Aligne verticalement l'image */
 }
 
 .download-button img::isPdfIcon {
     align-items: rigth;
     width: 24px;
-    /* Ajuste la taille de l'image */
     height: 24px;
     vertical-align: middle;
-    /* Aligne verticalement l'image */
-}
-
-/* Styles pour le bouton sur l'image de couverture */
-#2bacsx-content div[style="position: relative; text-align: center;"] a {
-  font-size: 20px;
-  font-weight: bold;
-  transition: background-color 0.3s ease; /* Ajoute une transition au survol */
-}
-
-#2bacsx-content div[style="position: relative; text-align: center;"] a:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Change la couleur au survol */
 }
