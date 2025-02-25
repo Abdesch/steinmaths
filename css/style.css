@@ -1,912 +1,202 @@
-<!DOCTYPE html>
-<html lang="fr">
+/* Style du menu principal */
+nav {
+    background-color: #0D47A1;
+    /* Bleu foncé */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligne les éléments à gauche, sauf si override */
+    padding: 10px 20px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours 2BACSM</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* Aligne les éléments du menu à gauche */
+    background-color: #1E3A8A;
+    /* Bleu foncé */
+}
 
-<body>
+nav li {
+    position: relative;
+}
 
-    <header>
-        <nav>
-            <!-- Ton menu de navigation (copié depuis index.html) -->
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+/* Style des liens du menu */
+nav a {
+    color: white;
+    /* Garde le texte en blanc pour contraster avec le bleu foncé */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size: 16px;
+}
 
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
+/* Style des icônes sociales */
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Pousse les icônes sociales vers la droite */
+}
 
-                <li class="dropdown">
-                    <a href="#">2ème Bac ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="2bacsm.html">2BACSM</a></li>
-                        <li><a href="cours/2bacsx-Équations différentielles.html">2BACSX</a></li>
-                        <li><a href="cours/2bacseco-Probabilités.html">2BACSECO</a></li>
-                        <li><a href="cours/2bacshl-Suites numériques.html">2BACSHL</a></li>
-                    </ul>
-                </li>
+.social-icons a {
+    color: white;
+    /* Garde le texte en blanc pour contraster avec le bleu foncé */
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
 
-                <li class="dropdown">
-                    <a href="#">1ère Bac ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="cours/1bacsm-Géométrie dans l’espace.html">1BACSM</a></li>
-                        <li><a href="cours/1bacsx-Trigonométrie.html">1BACSX</a></li>
-                        <li><a href="cours/1bacseco-Analyse combinatoire.html">1BACSECO</a></li>
-                        <li><a href="cours/1bacshl-Suites numériques.html">1BACSHL</a></li>
-                    </ul>
-                </li>
+/* Style de l'icône de recherche */
+.search-icon {
+    color: white;
+    /* Garde le texte en blanc pour contraster avec le bleu foncé */
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
 
-                <li class="dropdown">
-                    <a href="#">Tronc Commun ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="cours/tcs-Fonctions affines.html">TCS</a></li>
-                        <li><a href="cours/tcl-quadratiques.html">TCL</a></li>
-                    </ul>
-                </li>
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    top: 100%;
+    left: 0;
+}
 
-                <li class="dropdown">
-                    <a href="#">Collège ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="cours/3ac-Théorème de Thalès.html">3AC</a></li>
-                        <li><a href="cours/2ac-Proportionnalité.html">2AC</a></li>
-                        <li><a href="cours/1ac-Symétrie axiale.html">1AC</a></li>
-                    </ul>
-                </li>
-            </ul>
+.dropdown-content li {
+    display: block;
+    width: 100%;
+}
 
-            <div class="social-icons">
-                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </nav>
-    </header>
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    font-size: 14px;
+}
 
-    <main>
-        <section id="2bacsm-content">
-            <img src="https://i.imgur.com/tonE7n1.png" alt="2BACSM">
-            <h2 style="background-color: #f0f; color: white; padding: 10px; text-align: center;">Cours & Exercices et
-                Devoirs surveillés (semestre 01)</h2>
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
-            <table class="section-table">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>01- Limites et continuité</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>02- Les suite numériques</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>03- Dérivation -TAF- ROLLE</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>04- Etude des fonction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>05- Fonctions Primitives</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>06- Fonctions logarithmiques</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>07- Fonctions exponentielles</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>08- Equations différentielles</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 01</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 02</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 03</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 04</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+/* Afficher le menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-            <h2 style="background-color: #f0f; color: white; padding: 10px; text-align: center;">Cours & Exercices et
-                Devoirs surveillés (semestre 02)</h2>
+/* Correction pour bien aligner les sous-menus */
+nav ul li {
+    display: inline-block;
+}
 
-            <table class="section-table">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>09- Nombres Complexes</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>10- Calcul intégral</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>11- Arithmétique</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>12- Structure algébrique</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>13- Espaces vectoriels</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>14- Calcul de probabilités</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="file-button">
-                                            Télécharger le cours
-                                            <img src="img/btn.png" alt="Télécharger le cours">
-                                        </a>
-                                        <a href="#" class="file-button">
-                                            Télécharger les exercices
-                                            <img src="img/btn.png" alt="Télécharger les exercices">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 01</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 02</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 03</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Devoir surveillé N° 04</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">
-                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
-                                            
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+nav ul .dropdown {
+    display: inline-block;
+}
 
-        </section>
-        <section id="2bacsm-content">
-            <h2 style="background-color: #f0f; color: white; padding: 10px; text-align: center;">Examens Nationaux</h2>
+/* Correction pour éviter que les sous-menus se chevauchent */
+.dropdown-content {
+    text-align: left;
+    width: auto;
+}
 
-            <table class="section-table">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2022 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+/* Styles pour la page 2BACSM */
+#2bacsm-content {
+    padding: 20px;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2022 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+#2bacsm-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2021 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.section-table {
+    width: 100%;
+    /* Le tableau occupe toute la largeur */
+    border-collapse: collapse;
+    /* Fusionne les bordures des cellules */
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2021 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.section-table td {
+    padding: 0;
+    /* Ajoute de l'espace à l'intérieur des cellules */
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2020 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.section-container {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2020 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+/*.section-container details {
+    border-bottom: 1px solid red;
+    padding: 10px 0;
+}*/
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2019 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.section-container summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    /* Supprime la bordure bleue au clic */
+    text-decoration: underline;
+    /* Ajoute un soulignement */
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2019 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.download-links {
+    margin-top: 10px;
+    text-align: center;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2018 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2018 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+.download-button:hover {
+    background-color: darkgreen;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2017 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+details>summary:first-of-type {
+    list-style: none;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2017 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+details>summary:first-of-type::before {
+    content: "▼ ";
+    font-size: 1em;
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2016 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+details[open]>summary:first-of-type::before {
+    content: "▲ ";
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2016 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
+/* Style pour l'image à l'intérieur du bouton de téléchargement */
+.download-button img {
+    width: 32px;
+    /* Ajuste la taille de l'image */
+    height: 32px;
+    vertical-align: middle;
+    /* Aligne verticalement l'image */
+}
 
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2015 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2015 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2014 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2014 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2013 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2013 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2012 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2012 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2011 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2011 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2010 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2010 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2009 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2009 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen national Normale 2008 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="section-container">
-                                <details class="accordion-section">
-                                    <summary>Examen rattrapage 2008 + correction</summary>
-                                    <div class="download-links">
-                                        <a href="#" class="pdf-button">Télécharger<img src="img/pdf-icon.png" alt="Télécharger">
-
-                                        </a>
-                                    </div>
-                                </details>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Ton footer (copié depuis index.html) -->
-        <p>© 2024 Mon Site Web</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-
-</html>
+.download-button img::isPdfIcon {
+    align-items: rigth;
+    width: 24px;
+    /* Ajuste la taille de l'image */
+    height: 24px;
+    vertical-align: middle;
+    /* Aligne verticalement l'image */
+}
