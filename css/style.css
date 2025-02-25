@@ -108,114 +108,7 @@ nav ul .dropdown {
     width: auto;
 }
 
-/* Styles pour la page 2BACSM */
-#2bacsm-content {
-    padding: 20px;
-}
-
-#2bacsm-content h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.section-table {
-    width: 100%;
-    /* Le tableau occupe toute la largeur */
-    border-collapse: collapse;
-    /* Fusionne les bordures des cellules */
-}
-
-.section-table td {
-    padding: 0;
-    /* Ajoute de l'espace à l'intérieur des cellules */
-}
-
-.section-container {
-    border: 2px solid red;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-/*.section-container details {
-    border-bottom: 1px solid red;
-    padding: 10px 0;
-}*/
-
-.section-container summary {
-    cursor: pointer;
-    font-weight: bold;
-    padding: 10px;
-    outline: none;
-    /* Supprime la bordure bleue au clic */
-    text-decoration: underline;
-    /* Ajoute un soulignement */
-}
-
-.download-links {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-}
-
-.download-button:hover {
-    background-color: darkgreen;
-}
-
-details>summary:first-of-type {
-    list-style: none;
-}
-
-details>summary:first-of-type::before {
-    content: "▼ ";
-    font-size: 1em;
-}
-
-details[open]>summary:first-of-type::before {
-    content: "▲ ";
-}
-
-/* Style pour l'image à l'intérieur du bouton de téléchargement */
-.download-button img {
-    width: 32px;
-    /* Ajuste la taille de l'image */
-    height: 32px;
-    vertical-align: middle;
-    /* Aligne verticalement l'image */
-}
-
-.download-button img::isPdfIcon {
-    align-items: rigth;
-    width: 24px;
-    /* Ajuste la taille de l'image */
-    height: 24px;
-    vertical-align: middle;
-    /* Aligne verticalement l'image */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Existing styles from previous steps */
-
-/* New styles for the 2BACSX page */
+/* Custom styles for the 2BACSX page */
 .section-container {
     border: 2px solid red;
     /* Red border as requested */
@@ -236,4 +129,26 @@ summary {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+.pdf-button { /* Style for all PDF button to load inline*/
+    display: inline-flex;
+
+}
+
+/* Style for the links */
+#2bacsx-content a:link {
+    color: red;
+}
+
+#2bacsx-content a:visited {
+    color: green;
+}
+
+#2bacsx-content a:hover {
+    color: hotpink;
+}
+
+#2bacsx-content a:active {
+    color: blue;
 }
