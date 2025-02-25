@@ -3,17 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sectionTables.forEach(table => {
         const accordionSections = table.querySelectorAll('.accordion-section');
-
-        accordionSections.forEach(section => {
-            section.addEventListener('toggle', function() {
-                if (this.open) {
-                    accordionSections.forEach(otherSection => {
-                        if (otherSection !== this && otherSection.open) {
-                            otherSection.open = false;
-                        }
-                    });
-                }
-            });
+        const firstSection = accordionSections[0]; // Récupère la première section
+    
+            // Ferme toutes les sections, sauf la première
+            for (let i = 1; i < accordionSections.length; i++) {
+                accordionSections[i].removeAttribute('open'); // Retire l'attribut "open"
+            }
         });
     });
 });
