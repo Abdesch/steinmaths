@@ -100,17 +100,16 @@ nav ul .dropdown {
 
 #2bacseco-content h2 {
     margin-bottom: 20px;
-    /* background-color: #f0f;   Supprimer pour ne pas avoir de fond rose */
-    /* color: white;  Supprimer pour utiliser la couleur par défaut */
+    display: inline-block; /* Ajoutez cette ligne */
+    background-color: #f0f;   /* Ajoutez cette ligne */
+    color: white;  /* Ajoutez cette ligne */
     padding: 10px;
 }
 
 /* Styles pour l'accordéon */
 .section-table {
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
-    display: table;/*Supprimer inline-block*/
-
 }
 
 .section-table td {
