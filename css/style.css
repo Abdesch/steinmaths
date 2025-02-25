@@ -211,3 +211,13 @@ details[open]>summary:first-of-type::before {
 #2bacsx-content div[style="position: relative; text-align: center;"] a:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Change la couleur au survol */
 }
+
+/* Cacher tous les .section-container sauf le premier */
+/*.section-container {
+display: none;
+}
+
+.section-container:first-child {
+  display: block;
+}
+Il ne faut plus cacher les sections*/
