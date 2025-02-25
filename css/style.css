@@ -100,9 +100,9 @@ nav ul .dropdown {
 
 #2bacseco-content h2 {
     margin-bottom: 20px;
-    display: inline-block; /* Ajoutez cette ligne */
-    background-color: #f0f;   /* Ajoutez cette ligne */
-    color: white;  /* Ajoutez cette ligne */
+    display: inline-block;
+    background-color: #f0f;
+    color: white;
     padding: 10px;
 }
 
