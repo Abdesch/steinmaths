@@ -114,8 +114,7 @@ nav ul .dropdown {
 }
 
 .section-container {
-    border: 2px solid red;
-    /* Utile pour le debug, à retirer en production */
+    border: 2px solid red; /* Utile pour le debug, à retirer en production */
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -125,8 +124,7 @@ nav ul .dropdown {
     font-weight: bold;
     padding: 10px;
     outline: none;
-    /* text-decoration: underline;
-    // Retirer le soulignement du summary, pour la clareté
+    text-decoration: underline; /*// C'est ici que j'avais fait la modification*/
 }
 
 details>summary:first-of-type {
@@ -148,8 +146,7 @@ details[open]>summary:first-of-type::before {
 }
 
 .download-button {
-    display: inline-flex;
-    /* Utiliser flexbox pour aligner le texte et l'image */
+    display: inline-flex; /* Utiliser flexbox pour aligner le texte et l'image */
     align-items: center;
     /* Centrer verticalement le texte et l'image */
     padding: 10px 20px;
