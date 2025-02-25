@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const sectionTables = document.querySelectorAll('.section-table');
+    const accordionSections = document.querySelectorAll('.accordion-section');
 
-    sectionTables.forEach(table => {
-        const accordionSections = table.querySelectorAll('.accordion-section');
-        const firstSection = accordionSections[0]; // Récupère la première section
-    
-            // Ferme toutes les sections, sauf la première
-            for (let i = 1; i < accordionSections.length; i++) {
-                accordionSections[i].removeAttribute('open'); // Retire l'attribut "open"
+    accordionSections.forEach(section => {
+        section.addEventListener('toggle', function() {
+            if (this.open) {
+                // Fermer toutes les autres sections, peu importe le tableau
+                accordionSections.forEach(otherSection => {
+                    if (otherSection !== this && otherSection.open) {
+                        otherSection.open = false;
+                    }
+                });
             }
         });
     });
