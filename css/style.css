@@ -94,11 +94,11 @@ nav ul .dropdown {
 }
 
 /* Styles pour le contenu principal */
-#2bacsm-content {
+#2bacseco-content {
     padding: 20px;
 }
 
-#2bacsm-content h2 {
+#2bacseco-content h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -146,13 +146,15 @@ details[open]>summary:first-of-type::before {
 }
 
 .download-button {
-    display: inline-block;
+    display: inline-flex; /* Utiliser flexbox pour aligner le texte et l'image */
+    align-items: center; /* Centrer verticalement le texte et l'image */
     padding: 10px 20px;
     background-color: green;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin: 0 10px;
+    font-size: 16px; /* Ajuster la taille de la police au besoin */
 }
 
 .download-button:hover {
@@ -160,14 +162,7 @@ details[open]>summary:first-of-type::before {
 }
 
 .download-button img {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-}
-
-.download-button img::isPdfIcon {
-    align-items: rigth;
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
+    width: 20px; /* Ajuster la taille de l'image au besoin */
+    height: 20px;
+    margin-left: 5px; /* Ajouter un espacement entre le texte et l'image */
 }
