@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     accordionSections.forEach(section => {
         section.addEventListener('toggle', function() {
-            if (this.open) { // Si cette section est ouverte
-                // Fermer toutes les autres sections
+            if (this.open) {
                 accordionSections.forEach(otherSection => {
                     if (otherSection !== this && otherSection.open) {
                         otherSection.open = false;
