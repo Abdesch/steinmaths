@@ -4,83 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2BACSHL - Cours et Exercices</title>
+    <title>Cours 2BACSHL</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const accordionSections = document.querySelectorAll('.accordion-section');
-
-        accordionSections.forEach(section => {
-            section.addEventListener('toggle', function () {
-                if (this.open) { // Si cette section est ouverte
-                    // Fermer toutes les autres sections
-                    accordionSections.forEach(otherSection => {
-                        if (otherSection !== this && otherSection.open) {
-                            otherSection.open = false;
-                        }
-                    });
-                }
-            });
-        });
-    script>
-    <style>
-        /* Custom styles for the 2BACSX page */
-        .section-container {
-            border: 2px solid red;
-            /* Red border as requested */
-            margin-bottom: 20px;
-        }
-
-        summary {
-            padding: 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        /* Style for the pink bars */
-        .pink-bar {
-            background-color: magenta;
-            /* Magenta color for the pink bars */
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        .pdf-button {
-            /* Style for all PDF button to load inline*/
-            display: inline-flex;
-
-        }
-
-        /* Style for the links */
-        #2bacsx-content a:link {
-            color: red;
-        }
-
-        #2bacsx-content a:visited {
-            color: green;
-        }
-
-        #2bacsx-content a:hover {
-            color: hotpink;
-        }
-
-        #2bacsx-content a:active {
-            color: blue;
-        }
-    </style>
 </head>
 
 <body>
 
     <header>
-        <!-- Ton menu de navigation (copié depuis index.html) -->
         <nav>
+            <!-- Ton menu de navigation (copié depuis index.html) -->
             <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -137,142 +73,222 @@
     </header>
 
     <main>
-         div class="pink-bar">Cours & Exercices et Devoirs surveillés (semestre 01) div>
+        <section id="2bacshl-content">
+            <img src="https://i.imgur.com/tonE7n1.png" alt="2BACSHL">
+            <h2 style="background-color: #f0f; color: white; padding: 10px; text-align: center;">Cours & Exercices et
+                Devoirs surveillés (semestre 01)</h2>
+
             <table class="section-table">
-                tbody>
-                   Tr>
-                        Td>
-                            Div class="section-container">
-                                details class="accordion-section">
-                                    summary>01- Les suites récurrentes Summary>
-                                     Div class="download-links">
-                                        <a href="#">Telecharger<img src="img/pdf-icon.png" alt="Telecharg">a>
- 
-                                    Div>
-                            details>
-                        Div>
-                    Td>
-                 Tr>
-                         Div class="section-container">
- details class="accordion-section">
-                                  summary> 02- Limite d’une suite Summary>
-                                    Div class="download-links">
-                                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
- 
-                                       Div>
-                                 details>
-                             Div>
-                                Td>
-             Tr>
-               Div class="section-container">
- details class="accordion-section">
-                                  summary>03- Probabilités Summary>
-                                    Div class="download-links">
-                                           a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                                  Div>
-                                  details>
-                              Div>
-                                Td>
-             Tr>
-              Div class="section-container">
-                    details class="accordion-section">
-                      summary>Devoir surveillé N° 01 Summary>
-                       Div class="download-links">
-                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-        Div>
-    details>
-          Div>
-                Td>
-              Tr>
-                Div class="section-container">
-                    details class="accordion-section">
-                      summary>Devoir surveillé N° 02 Summary>
-                       Div class="download-links">
-                         a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-        Div>
-    details>
-          Div>
-                Td>
-       ""         Tr>
-</tbody>
-            table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>01- Les suites récurrentes</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>02- Limite d'une suite</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>03- Probabilités</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Devoir surveillé N° 01</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Devoir surveillé N° 02</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-            Div class="pink-bar">Cours & Exercices et Devoirs surveillés (semestre 02) Div>
-             table class="section-table">
-                tbody>
-             Tr>
-                Td>
-                   Div class="section-container">
-                           details class="accordion-section">
-                              summary>04- Dérivation Summary>
-                                Div class="download-links">
-                                     a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                         Div>
-                          details>
-                      Div>
-                    Td>
-              Tr>
-               Tr>
-                Td>
-                    Div class="section-container">
-                           details class="accordion-section">
-                            summary>05- Etude des fonctions Summary>
-                         Div class="download-links">
-                             a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                         Div>
-                          details>
-                      Div>
-                    Td>
-              Tr>
-                Td>
-                  Div class="section-container">
-                    details class="accordion-section">
-                      summary>06- Fonctions Logarithmiques Summary>
-                        Div class="download-links">
-                           a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-        Div>
-    details>
-      Div>
-                Td>
-              Tr>
+            <h2 style="background-color: #f0f; color: white; padding: 10px; text-align: center;">Cours & Exercices et
+                Devoirs surveillés (semestre 02)</h2>
 
-              Div class="section-container">
-                details class="accordion-section">
-                  summary>07- Fonctions Exponentielles Summary>
-                   Div class="download-links">
-                     a href="#"><img src="img/pdf-icon.png" alt="Télécharger">Télécharger  a>
-        Div>
-            details>
-        Div>
-                Td>
-              Tr>
+            <table class="section-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>04- Dérivation</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>05- Etude des fonctions</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>06- Fonctions Logarithmiques</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>07- Fonctions Exponentielles</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="file-button">
+                                            Télécharger le cours
+                                            <img src="img/btn.png" alt="Télécharger le cours">
+                                        </a>
+                                        <a href="#" class="file-button">
+                                            Télécharger les exercices
+                                            <img src="img/btn.png" alt="Télécharger les exercices">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Devoir surveillé N° 01</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="section-container">
+                                <details class="accordion-section">
+                                    <summary>Devoir surveillé N° 02</summary>
+                                    <div class="download-links">
+                                        <a href="#" class="pdf-button">
+                                            Télécharger <img src="img/pdf-icon.png" alt="Télécharger">
+                                        </a>
+                                    </div>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
- Tr>
-                    Td>
-                       Div class="section-container">
-                        details class="accordion-section">
-                            summary>Devoir surveillé N° 01 Summary>
-                         Div class="download-links">
-                          a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                          Div>
-                          details>
-                       Div>
-                    Td>
-                 Tr>
+        </section>
+    </main>
 
-            Div class="section-container">
-                    details class="accordion-section">
-                      summary>Devoir surveillé N° 02 Summary>
-                         Div class="download-links">
-                           a href="#"><img src="img/pdf-icon.png" alt="Télécharger"> Télécharger a>
-                        Div>
-                    details>
-                    Div>
-                  Td>
-             Tr>
+    <footer>
+        <!-- Ton footer (copié depuis index.html) -->
+        <p>© 2024 Mon Site Web</p>
+    </footer>
 
-tbody>
- Table>
- body>
+    <script src="js/script.js"></script>
+</body>
 
-html>
+</html>
