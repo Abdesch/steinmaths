@@ -100,7 +100,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    width: 1700px;
+    width: 600px; /* Largeur fixe pour le titre */
     margin: 0 auto 20px auto;
     display: block;
     text-align: center;
@@ -113,11 +113,12 @@ nav ul .dropdown {
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
-    width: 100%;
+    width: 600px; /* Largeur fixe pour le tableau */
     border-collapse: collapse;
     margin-bottom: 10px;
     table-layout: fixed;
-    border: 2px solid red; /* Bordure rouge autour du tableau */
+    border: 2px solid red;
+    margin: 0 auto; /* Centrage du tableau */
 }
 
 /* Ajustement des lignes du tableau */
@@ -163,4 +164,23 @@ nav ul .dropdown {
     width: 20px;
     height: 20px;
     margin-left: 5px;
+}
+
+/* Style pour l'en-tête des sections (summary) */
+.section-container summary {
+  /*  margin-bottom: 20px; !* Ajoute de l'espace en bas des en-têtes *!*/
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    background-color: transparent; /* Suppression du fond rose */
+    color: black; /* Texte en noir */
+    text-decoration: underline; /* Ajoute un soulignement */
+    text-decoration-color: black;  /* Couleur du soulignement noir */
+    border-bottom: 1px solid #ccc; /* Ajoute une bordure inférieure grise */
+}
+
+/* Style de l'en-tête de la section ouverte (summary ouvert) */
+details[open] > summary {
+    color: red;  /* Couleur rouge du texte au clic */
+    text-decoration-color: red;  /* Couleur rouge du soulignement au clic */
 }
