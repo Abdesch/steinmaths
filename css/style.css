@@ -100,7 +100,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    width: 600px; /* Largeur fixe pour le titre */
+    width: fit-content; /* Ajuste la largeur au contenu */
     margin: 20px auto; /* Marge haut et bas, centrage horizontal */
     display: block;
     text-align: center;
