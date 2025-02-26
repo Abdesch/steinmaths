@@ -100,7 +100,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux roses */
 #2bacseco-content h2 {
-    width: 1650px; /* Largeur fixe en pixels pour le titre */
+    width: 1700px; /* Largeur fixe en pixels pour le titre */
     margin: 0 auto 20px auto; /* Centre l'élément horizontalement avec un espace en bas */
     display: block;
     text-align: center; /* Centre le texte */
@@ -125,23 +125,22 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux rouges */
 .section-container {
-    width: 1650px; /* Définir une largeur fixe en pixels */
+    width: 1700px; /* Définir une largeur fixe en pixels */
     margin: 0 auto; /* Centre les tableaux rouges */
-    padding: 2px; /* Réduction du padding interne */
-    margin-bottom: 2px; /* Réduction de la marge en bas du conteneur */
+    border: 3px solid red; /* Ajout de la bordure rouge autour du conteneur */
+    padding: 10px; /* Augmentation du padding pour l'espacement interne */
+    margin-bottom: 10px; /* Augmentation de la marge en bas du conteneur */
     box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
 }
 
 .section-container summary {
     cursor: pointer;
     font-weight: bold;
-    padding: 5px; /* Réduction du padding interne */
+    padding: 10px; /* Augmentation du padding pour l'espacement interne */
     outline: none;
     background-color: transparent; /* Suppression du fond rose */
     color: black; /* Texte en noir */
-    text-decoration: underline; /* Ajoute un soulignement */
-    text-decoration-color: black; /* Couleur du soulignement noir */
-    border-bottom: 2px solid red; /* Ajout de la bordure en bas et changement de couleur */
+    text-decoration: none; /* Suppression du soulignement */
 }
 
 details > summary:first-of-type {
@@ -160,7 +159,7 @@ details[open] > summary:first-of-type::before {
 /* Changement de style quand la section est ouverte */
 details[open] > summary {
     color: red;
-    text-decoration-color: red;
+    text-decoration: none; /* Suppression du soulignement en rouge */
 }
 
 .download-links {
