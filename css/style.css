@@ -100,7 +100,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    width: 600px; /* Largeur fixe pour le titre */
+    width: 1680px; /* Largeur fixe pour le titre */
     margin: 0 auto 20px auto;
     display: block;
     text-align: center;
@@ -113,7 +113,7 @@ nav ul .dropdown {
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
-    width: 600px; /* Largeur fixe pour le tableau */
+    width: 1680px; /* Largeur fixe pour le tableau */
     border-collapse: collapse;
     margin-bottom: 10px;
     table-layout: fixed;
