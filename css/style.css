@@ -1,115 +1,28 @@
-/* Style du menu principal */
-nav {
-    background-color: #0D47A1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    background-color: #1E3A8A;
-}
-
-nav li {
-    position: relative;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    font-size: 16px;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.social-icons a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-.search-icon {
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 0;
-    top: 100%;
-    left: 0;
-}
-
-.dropdown-content li {
-    display: block;
-    width: 100%;
-}
-
-.dropdown-content a {
-    padding: 10px 15px;
-    display: block;
-    color: black;
-    font-size: 14px;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul .dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    text-align: left;
-    width: auto;
-}
-
 /* Styles pour le contenu principal */
 #2bacseco-content {
     padding: 20px;
+    /* Ajout d'une largeur maximale pour éviter que le contenu devienne trop large sur les grands écrans */
+    max-width: 960px; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
 #2bacseco-content h2 {
     margin-bottom: 20px;
     display: inline-block;
-    background-color: #f0f;
+    background-color: #f0f; /* Rose */
     color: white;
     padding: 10px;
+    text-align: center; /* Assure le centrage du texte */
+    width: 100%; /* Le titre prend toute la largeur de son conteneur */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+
 }
 
 /* Styles pour l'accordéon */
 .section-table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px; /* Ajoute un espace entre les tableaux */
 }
 
 .section-table td {
@@ -118,9 +31,11 @@ nav ul .dropdown {
 
 .section-container {
     border: 2px solid red;
-    /* Utile pour le debug, à retirer en production */
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;  /* réduit la marge pour un aspect plus compact */
+    width: 70%;           /* Ajuste la largeur ici */
+    margin-left: auto;   /* Centre horizontalement */
+    margin-right: auto;
 }
 
 .section-container summary {
@@ -130,17 +45,27 @@ nav ul .dropdown {
     outline: none;
 }
 
-details>summary:first-of-type {
+details > summary:first-of-type {
     list-style: none;
 }
 
-details>summary:first-of-type::before {
+details > summary:first-of-type::before {
     content: "▼ ";
     font-size: 1em;
 }
 
-details[open]>summary:first-of-type::before {
+details[open] > summary:first-of-type::before {
     content: "▲ ";
+}
+
+/* Ajout de styles pour l'en-tête rose */
+details > summary {
+    background-color: #f0f;  /* Fond rose */
+    color: white;          /* Texte blanc */
+    padding: 10px;          /* Ajoute de l'espace autour du texte */
+    cursor: pointer;        /* Change le curseur en main au survol */
+    border-radius: 5px;    /* Arrondit les coins */
+    margin-bottom: 5px;      /* Ajoute un espace en bas pour séparer du contenu */
 }
 
 .download-links {
@@ -150,9 +75,7 @@ details[open]>summary:first-of-type::before {
 
 .download-button {
     display: inline-flex;
-    /* Utiliser flexbox pour aligner le texte et l'image */
     align-items: center;
-    /* Centrer verticalement le texte et l'image */
     padding: 10px 20px;
     background-color: green;
     color: white;
@@ -160,7 +83,6 @@ details[open]>summary:first-of-type::before {
     border-radius: 5px;
     margin: 0 10px;
     font-size: 16px;
-    /* Ajuster la taille de la police au besoin */
 }
 
 .download-button:hover {
@@ -169,8 +91,11 @@ details[open]>summary:first-of-type::before {
 
 .download-button img {
     width: 20px;
-    /* Ajuster la taille de l'image au besoin */
     height: 20px;
     margin-left: 5px;
-    /* Ajouter un espacement entre le texte et l'image */
+}
+
+/* Style pour les details ouvert (optionnel, mais améliore l'UX) */
+details[open] > summary {
+    background-color: #e0e; /* Rose plus clair ou une nuance différente */
 }
