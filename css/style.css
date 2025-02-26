@@ -134,6 +134,9 @@ nav ul .dropdown {
     font-weight: bold;
     padding: 10px;
     outline: none;
+   /* text-decoration: underline;  Suppression du soulignement, ou commenté pour le conserver */
+    background-color: transparent; /* Suppression du fond rose */
+    color: black; /* Texte en noir */
 }
 
 details > summary:first-of-type {
@@ -175,5 +178,3 @@ details[open] > summary:first-of-type::before {
     height: 20px;
     margin-left: 5px;
 }
-
-
