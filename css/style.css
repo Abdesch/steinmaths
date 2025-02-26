@@ -100,7 +100,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux roses */
 #2bacseco-content h2 {
-    width: fit-content;  /* La largeur s'ajuste au contenu */
+    width: 900px;  /* Largeur fixe en pixels pour le titre */
     margin: 0 auto 20px auto;  /* Centre l'élément horizontalement avec un espace en bas */
     display: block;
     text-align: center;  /* Centre le texte */
@@ -108,6 +108,7 @@ nav ul .dropdown {
     color: white;
     padding: 10px 20px;
     border-radius: 8px;  /* Arrondi léger pour un meilleur rendu */
+    box-sizing: border-box;  /* Inclure le padding dans la largeur totale */
 }
 
 /* Styles pour l'accordéon */
