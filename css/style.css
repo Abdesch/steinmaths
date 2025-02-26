@@ -122,7 +122,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux rouges */
 .section-container {
-    width: 600px;  /* Définir une largeur fixe en pixels */
+    width: 900px;  /* Définir une largeur fixe en pixels */
     margin: 0 auto;  /* Centre les tableaux rouges */
     border: 2px solid red;
     padding: 10px;
