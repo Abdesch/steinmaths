@@ -122,11 +122,12 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux rouges */
 .section-container {
-    width: 90%;  /* Définit une largeur fixe pour éviter qu'il s'étende trop */
+    width: 600px;  /* Définir une largeur fixe en pixels */
     margin: 0 auto;  /* Centre les tableaux rouges */
     border: 2px solid red;
     padding: 10px;
     margin-bottom: 20px;
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
 }
 
 .section-container summary {
@@ -134,7 +135,6 @@ nav ul .dropdown {
     font-weight: bold;
     padding: 10px;
     outline: none;
-   /* text-decoration: underline;  Suppression du soulignement, ou commenté pour le conserver */
     background-color: transparent; /* Suppression du fond rose */
     color: black; /* Texte en noir */
 }
