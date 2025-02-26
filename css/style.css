@@ -94,7 +94,98 @@ nav ul .dropdown {
 }
 
 /* Styles pour le contenu principal */
-/* NEW CSS Styles */
+#2bacseco-content {
+    padding: 20px;
+}
+
+/* Ajustement de la largeur des titres */
+#2bacseco-content h2 {
+    width: fit-content; /* Ajuste la largeur au contenu */
+    margin: 20px auto; /* Marge haut et bas, centrage horizontal */
+    display: block;
+    text-align: center;
+    background-color: #f0f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Styles pour l'affichage en tableau unique */
+.section-table {
+    width: 1693px; /* Largeur fixe pour le tableau */
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    table-layout: fixed;
+    border: 2px solid red;
+    margin: 0 auto; /* Centrage du tableau */
+}
+
+/* Ajustement des lignes du tableau */
+.section-table tr {
+    border-bottom: 2px solid red; /* Séparation entre les lignes */
+}
+
+/* Suppression de la bordure rouge sur la dernière ligne */
+.section-table tr:last-child {
+    border-bottom: none;
+}
+
+/* Ajustement des cellules */
+.section-table td {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styles pour les liens de téléchargement */
+.download-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.download-button:hover {
+    background-color: darkgreen;
+}
+
+.download-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Style pour l'en-tête des sections (summary) */
+.section-container summary {
+  /*  margin-bottom: 20px; /* Ajoute de l'espace en bas des en-têtes */
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    background-color: transparent; /* Suppression du fond rose */
+    color: black; /* Texte en noir */
+    text-decoration: underline; /* Ajoute un soulignement */
+    text-decoration-color: black;  /* Couleur du soulignement noir */
+    border-bottom: 1px solid #ccc; /* Ajoute une bordure inférieure grise */
+}
+
+/* Style de l'en-tête de la section ouverte (summary ouvert) */
+details[open] > summary {
+    color: red;  /* Couleur rouge du texte au clic */
+    text-decoration-color: red;  /* Couleur rouge du soulignement au clic */
+}
+
+/* NEW CSS Styles - Appended to the end */
 #new-welcome {
     text-align: center;
     margin: 20px 0;
@@ -135,8 +226,7 @@ nav ul .dropdown {
     background-color: #7b1fa2; /* Darker purple */
 }
 
-/* END NEW CSS Styles */
-
 #videos {
     text-align: center;
 }
+/* End of Appended CSS */
