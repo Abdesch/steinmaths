@@ -6,6 +6,10 @@
     <title>Mon Site Web</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Add Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
 
@@ -69,21 +73,72 @@
     </header>
 
     <main>
+        <!-- START of Inserted Code -->
         <section id="welcome">
-            <h1>Bienvenue</h1>
-            <p>Bienvenue sur mon site web éducatif !</p>
+            <h1 class="welcome-title">Bienvenue</h1>
+            <p>Problèmes sur les fonctions logarithmes et exponentielles</p>
         </section>
 
-        <section id="videos">
-            <h2>Vidéo en vedette</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <section id="image-slider">
+            <div class="slider">
+              <div><a href="#"><img src="image1.jpg" alt="Image 1"></a></div>
+              <div><a href="#"><img src="image2.jpg" alt="Image 2"></a></div>
+              <div><a href="#"><img src="image3.jpg" alt="Image 3"></a></div>
+              <div><a href="#"><img src="image4.jpg" alt="Image 4"></a></div>
+
+            </div>
+            <a href="#" class="read-more-button">Lire la suite...</a>
         </section>
+
+          <section id="featured-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <!-- END of Inserted Code -->
+
     </main>
 
     <footer>
         <p>© 2024 Mon Site Web</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>
