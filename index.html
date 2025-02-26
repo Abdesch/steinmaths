@@ -73,28 +73,35 @@
     </header>
 
     <main>
-        <!-- START of Inserted Code -->
+      <!-- Add this code between the <main> tags, before the existing <section id="welcome"> -->
+      <section id="new-welcome">
+          <h1 class="welcome-title">Bienvenue</h1>
+          <p>Problèmes sur les fonctions logarithmes et exponentielles</p>
+      </section>
+
+      <section id="image-slider">
+          <div class="slider">
+            <div><a href="#"><img src="image1.jpg" alt="Image 1"></a></div>
+            <div><a href="#"><img src="image2.jpg" alt="Image 2"></a></div>
+            <div><a href="#"><img src="image3.jpg" alt="Image 3"></a></div>
+            <div><a href="#"><img src="image4.jpg" alt="Image 4"></a></div>
+          </div>
+          <a href="#" class="read-more-button">Lire la suite...</a>
+      </section>
+      <!-- End New Code -->
+
+      <!-- Preserve the Existing Section, BUT COMMENT IT OUT-->
+      <!--
         <section id="welcome">
-            <h1 class="welcome-title">Bienvenue</h1>
-            <p>Problèmes sur les fonctions logarithmes et exponentielles</p>
+          <h1>Bienvenue</h1>
+          <p>Bienvenue sur mon site web éducatif !</p>
         </section>
+      -->
 
-        <section id="image-slider">
-            <div class="slider">
-              <div><a href="#"><img src="image1.jpg" alt="Image 1"></a></div>
-              <div><a href="#"><img src="image2.jpg" alt="Image 2"></a></div>
-              <div><a href="#"><img src="image3.jpg" alt="Image 3"></a></div>
-              <div><a href="#"><img src="image4.jpg" alt="Image 4"></a></div>
-
-            </div>
-            <a href="#" class="read-more-button">Lire la suite...</a>
-        </section>
-
-          <section id="featured-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </section>
-        <!-- END of Inserted Code -->
-
+      <section id="videos">
+          <h2>Vidéo en vedette</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </section>
     </main>
 
     <footer>
