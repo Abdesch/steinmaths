@@ -1,14 +1,128 @@
-/* Styles pour afficher les éléments dans un seul tableau avec bordure rouge */
+/* Style du menu principal */
+nav {
+    background-color: #0D47A1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1E3A8A;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.search-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul .dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    text-align: left;
+    width: auto;
+}
+
+/* Styles pour le contenu principal */
+#2bacseco-content {
+    padding: 20px;
+}
+
+/* Ajustement de la largeur des titres */
+#2bacseco-content h2 {
+    width: 1700px;
+    margin: 0 auto 20px auto;
+    display: block;
+    text-align: center;
+    background-color: #f0f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Styles pour l'affichage en tableau unique */
 .section-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin-bottom: 10px;
+    table-layout: fixed;
     border: 2px solid red; /* Bordure rouge autour du tableau */
 }
 
-/* Style pour chaque ligne */
+/* Ajustement des lignes du tableau */
 .section-table tr {
-    border-bottom: 2px solid red; /* Ligne de séparation rouge */
+    border-bottom: 2px solid red; /* Séparation entre les lignes */
 }
 
 /* Suppression de la bordure rouge sur la dernière ligne */
@@ -16,13 +130,37 @@
     border-bottom: none;
 }
 
-/* Ajustement du style des cellules */
+/* Ajustement des cellules */
 .section-table td {
-    padding: 15px;
+    padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background-color: white; /* Fond blanc */
 }
 
+/* Styles pour les liens de téléchargement */
+.download-links {
+    margin-top: 10px;
+    text-align: center;
+}
 
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+}
 
+.download-button:hover {
+    background-color: darkgreen;
+}
+
+.download-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
