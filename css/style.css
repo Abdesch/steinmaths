@@ -100,13 +100,13 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux roses */
 #2bacseco-content h2 {
-    width: 60%;  /* Limite la largeur pour éviter qu'il prenne toute la page */
+    width: fit-content;  /* La largeur s'ajuste au contenu */
     margin: 0 auto 20px auto;  /* Centre l'élément horizontalement avec un espace en bas */
     display: block;
     text-align: center;  /* Centre le texte */
     background-color: #f0f;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 8px;  /* Arrondi léger pour un meilleur rendu */
 }
 
@@ -122,7 +122,7 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des tableaux rouges */
 .section-container {
-    width: 60%;  /* Définit une largeur fixe pour éviter qu'il s'étende trop */
+    width: 75%;  /* Définit une largeur fixe pour éviter qu'il s'étende trop */
     margin: 0 auto;  /* Centre les tableaux rouges */
     border: 2px solid red;
     padding: 10px;
@@ -175,4 +175,5 @@ details[open] > summary:first-of-type::before {
     height: 20px;
     margin-left: 5px;
 }
+
 
