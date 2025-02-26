@@ -100,8 +100,8 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    width: 1693px; /* Largeur fixe pour le titre */
-    margin: 0 auto 20px auto;
+    width: 600px; /* Largeur fixe pour le titre */
+    margin: 20px auto; /* Marge haut et bas, centrage horizontal */
     display: block;
     text-align: center;
     background-color: #f0f;
@@ -168,7 +168,7 @@ nav ul .dropdown {
 
 /* Style pour l'en-tête des sections (summary) */
 .section-container summary {
-  /*  margin-bottom: 20px; !* Ajoute de l'espace en bas des en-têtes *!*/
+  /*  margin-bottom: 20px; /* Ajoute de l'espace en bas des en-têtes */
     cursor: pointer;
     padding: 10px;
     outline: none;
