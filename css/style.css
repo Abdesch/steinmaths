@@ -120,9 +120,11 @@ nav ul .dropdown {
     background-color: #f0f; /* Couleur de fond rose */
     color: white; /* Couleur du texte en blanc */
     padding: 10px; /* Espacement interne */
- text-align: center; /* Aligné à gauche */
+    text-align: left; /* Aligné à gauche */
+    margin-top: 200px;  /* Espace au-dessus */
+    margin-bottom: 200px; /* Espace en dessous */
     width: fit-content; /* Ajuste la largeur au texte */
-    margin: auto; /* Centre l'élément horizontalement */
+    margin: 0; /* Centre l'élément horizontalement */
     border-radius: 5px; /* Optionnel : arrondi des bords */
 
 }
