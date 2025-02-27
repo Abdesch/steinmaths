@@ -168,7 +168,6 @@ nav ul .dropdown {
 
 /* Style pour l'en-tête des sections (summary) */
 .section-container summary {
-  /*  margin-bottom: 20px; /* Ajoute de l'espace en bas des en-têtes */
     cursor: pointer;
     padding: 10px;
     outline: none;
@@ -229,4 +228,14 @@ details[open] > summary {
 #videos {
     text-align: center;
 }
-/* End of Appended CSS */
+
+/* Empêcher le défilement horizontal */
+body {
+    overflow-x: hidden; /* Supprime la barre de défilement horizontale */
+}
+
+/* Ajuster les éléments qui dépassent */
+.section-table {
+    max-width: 100%; /* Empêche le tableau de dépasser la largeur de l'écran */
+    overflow-x: auto;
+}
