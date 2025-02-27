@@ -114,19 +114,15 @@ nav ul .dropdown {
     padding: 20px;
 }
 
-/* Ajustement de la largeur des titres (bandeaux roses) */
 #2bacseco-content h2 {
-    width: 20%; /* Ajuste cette valeur si nécessaire */
-    max-width: 90px; /* Empêche le bandeau d'être trop large */
-    margin: 20px auto; /* Centre horizontalement */
-    display: block;
-    text-align: center;
-    background-color: #f0f;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-sizing: border-box;
+    background-color: transparent; /* Supprime la couleur de fond */
+    color: black; /* Change le texte en noir */
+    padding: 0; /* Supprime l'espace autour du texte */
+    border-radius: 0; /* Enlève les bords arrondis */
+    margin: 20px 0; /* Ajuste la marge pour l'espacement */
+    text-align: left; /* Facultatif : ajuste l'alignement */
 }
+
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
