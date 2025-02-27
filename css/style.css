@@ -1,53 +1,72 @@
-/* Conteneur global pour centrer la navigation */
+/* Conteneur global : étendre le fond bleu sur toute la largeur */
 .nav-container {
-    display: flex;
-    justify-content: center;
     width: 100%;
-    background-color: #EDE7F6; /* Fond clair pour tester */
+    background-color: #0D47A1; /* Bleu foncé sur toute la page */
     padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Centrer la barre de navigation */
 }
 
-/* Style du menu principal */
+/* Barre de navigation centrée */
 nav {
-    background-color: #0D47A1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 80%; /* Ajuster la largeur pour éviter qu'elle touche les bords */
+    max-width: 1200px;
+    background-color: #0D47A1; /* Garder la même couleur */
     padding: 10px 20px;
-    max-width: 1200px; /* Largeur fixe centrée */
-    margin: 0 auto;
-    border-radius: 8px; /* Arrondir légèrement les bords */
+    border-radius: 8px;
 }
 
-/* Style de la liste de navigation */
+/* Centrer l’icône de recherche et "Accueil" */
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Prendre tout l’espace possible */
+}
+
+/* Liste de navigation */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
-    background-color: #1E3A8A;
+    background-color: transparent;
 }
 
+/* Style des éléments du menu */
 nav li {
     position: relative;
 }
 
+/* Style des liens */
 nav a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: block;
     font-size: 16px;
 }
 
-/* Centrage et espacement des icônes sociales */
+/* Icône de recherche */
+.search-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Icônes sociales alignées à droite */
 .social-icons {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    justify-content: flex-end;
+    flex: 1;
 }
 
+/* Espacement entre les icônes */
 .social-icons a {
     color: white;
     text-decoration: none;
@@ -55,15 +74,7 @@ nav a {
     font-size: 20px;
 }
 
-/* Style de l'icône de recherche */
-.search-icon {
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-/* Dropdown menu */
+/* Ajustement du menu déroulant */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -96,161 +107,4 @@ nav a {
     display: block;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav ul .dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    text-align: left;
-    width: auto;
-}
-
-/* Styles pour le contenu principal */
-#2bacseco-content {
-    padding: 20px;
-}
-
-/* Ajustement de la largeur des titres */
-#2bacseco-content h2 {
-    width: fit-content;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-    background-color: #f0f;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-/* Styles pour l'affichage en tableau unique */
-.section-table {
-    width: 1693px;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-    table-layout: fixed;
-    border: 2px solid red;
-    margin: 0 auto;
-}
-
-/* Ajustement des lignes du tableau */
-.section-table tr {
-    border-bottom: 2px solid red;
-}
-
-.section-table tr:last-child {
-    border-bottom: none;
-}
-
-/* Ajustement des cellules */
-.section-table td {
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Styles pour les liens de téléchargement */
-.download-links {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.download-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-.download-button:hover {
-    background-color: darkgreen;
-}
-
-.download-button img {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-}
-
-/* Style pour l'en-tête des sections */
-.section-container summary {
-    cursor: pointer;
-    padding: 10px;
-    outline: none;
-    background-color: transparent;
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: black;
-    border-bottom: 1px solid #ccc;
-}
-
-details[open] > summary {
-    color: red;
-    text-decoration-color: red;
-}
-
-/* Centrage de la section d'accueil */
-#new-welcome {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.welcome-title {
-    font-size: 3em;
-    font-weight: bold;
-    color: #e44d26;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-#image-slider {
-    margin-bottom: 20px;
-}
-
-.slider img {
-    width: 200px;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 0 10px;
-}
-
-.read-more-button {
-    display: block;
-    width: 150px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #9c27b0;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.read-more-button:hover {
-    background-color: #7b1fa2;
-}
-
-#videos {
-    text-align: center;
-}
-
-/* Empêcher le défilement horizontal */
-body {
-    overflow-x: hidden;
-}
-
-/* Ajuster les éléments qui dépassent */
-.section-table {
-    max-width: 100%;
-    overflow-x: auto;
-}
 
