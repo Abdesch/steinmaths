@@ -1,22 +1,19 @@
-/* Conteneur global pour centrer la navigation */ 
+/* Conteneur global pour centrer la navigation */
 .nav-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #EDE7F6; /* Fond clair pour tester */
+    width: 100%; /* Étend la couleur bleue sur toute la largeur */
+    background-color: #0D47A1; /* Assurez-vous que c'est la bonne couleur */
     padding: 10px 0;
 }
 
 /* Style du menu principal */
 nav {
-    background-color: #0D47A1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     max-width: 1200px; /* Largeur fixe centrée */
-    margin: 0 auto;
-    border-radius: 8px; /* Arrondir légèrement les bords */
+    margin: 0 auto; /* Centre le menu */
+    background-color: transparent; /* Supprime la couleur bleue ici */
 }
 
 /* Style de la liste de navigation */
