@@ -1,32 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('.carousel-container'); // Conteneur des images
-    const slides = document.querySelectorAll('.carousel-container img'); // Sélection des images
-    const dots = document.querySelectorAll('.dot'); // Sélection des petits cercles
-    let index = 0; // Position actuelle de l'image
+// Activer la recherche (ajoute un champ de recherche)
+document.querySelector(".search-icon").addEventListener("click", function() {
+    let searchField = document.createElement("input");
+    searchField.setAttribute("type", "text");
+    searchField.setAttribute("placeholder", "Rechercher...");
+    searchField.style.marginLeft = "10px";
+    document.querySelector("nav").appendChild(searchField);
+});
 
-    function showSlide(i) {
-        index = (i >= slides.length) ? 0 : (i < 0 ? slides.length - 1 : i); // Boucle infinie
-        carousel.style.transform = `translateX(${-index * 100}%)`; // Déplace le carrousel
-        
-        // Met à jour les cercles actifs
-        dots.forEach(dot => dot.classList.remove("active"));
-        dots[index].classList.add("active");
-    }
-
-    function autoSlide() {
-        index++;
-        showSlide(index);
-    }
-
-    // Défilement automatique toutes les 3 secondes
-    let interval = setInterval(autoSlide, 3000);
-
-    // Interaction utilisateur : arrêter/redémarrer le défilement
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            showSlide(i);
-            clearInterval(interval);
-            interval = setInterval(autoSlide, 3000); // Relance l'auto défilement après interaction
-        });
+// Vérifier que le slider fonctionne
+$(document).ready(function(){
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        responsive: [
+            { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 }},
+            { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 }}
+        ]
     });
 });
+
