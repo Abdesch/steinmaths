@@ -116,6 +116,15 @@ nav ul .dropdown {
 
 
 
+.bandeau {
+    background-color: #f0f; /* Couleur de fond rose */
+    color: white; /* Couleur du texte en blanc */
+    padding: 10px; /* Espacement interne */
+    text-align: center; /* Centrage du texte */
+    width: fit-content; /* Ajuste la largeur au texte */
+    margin: auto; /* Centre l'élément horizontalement */
+    border-radius: 5px; /* Optionnel : arrondi des bords */
+}
 
 
 
