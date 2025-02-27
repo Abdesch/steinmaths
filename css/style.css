@@ -114,18 +114,13 @@ nav ul .dropdown {
     padding: 20px;
 }
 
-/* Ajustement de la largeur des titres */
-#2bacseco-content h2 {
-    width: fit-content;
-    margin: 20px auto;
-    display: block;
-    text-align: center;
-    background-color: #f0f;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
+
+
+
+
+
+
+
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
