@@ -215,6 +215,22 @@ details[open] > summary {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+
+
+.probleme-accueil {
+    background-color: #e85ac0; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    text-align: center; /* Centrage du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 16px; /* Taille du texte */
+    border-radius: 10px; /* Coins arrondis */
+    display: inline-block; /* Ajuster la largeur au texte */
+}
+
+
+
+
 #image-slider {
     margin-bottom: 20px;
 }
