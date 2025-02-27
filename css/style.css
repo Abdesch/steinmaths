@@ -3,20 +3,21 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #EDE7F6; /* Fond clair pour tester */
+    background-color: #0D47A1; /* Déplacé la couleur ici */
     padding: 10px 0;
 }
 
 /* Style du menu principal */
 nav {
-    background-color: #0D47A1;
+    /* background-color: #0D47A1;  Supprimé car la couleur est maintenant dans .nav-container */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    max-width: 1200px; /* Largeur fixe centrée */
+    /* max-width: 1200px;   Supprimé pour permettre l'extension sur toute la largeur */
+    width: 100%; /* Ajouté pour prendre toute la largeur disponible */
     margin: 0 auto;
-    border-radius: 8px; /* Arrondir légèrement les bords */
+    border-radius: 0px; /* Supprimer l'arrondi des bords, ou ajustez comme vous voulez */
 }
 
 /* Style de la liste de navigation */
@@ -114,13 +115,14 @@ nav ul .dropdown {
     padding: 20px;
 }
 
+/* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    background-color: transparent; /* Supprime la couleur de fond */
-    color: black; /* Change le texte en noir */
-    padding: 0; /* Supprime l'espace autour du texte */
-    border-radius: 0; /* Enlève les bords arrondis */
-    margin: 20px 0; /* Ajuste la marge pour l'espacement */
-    text-align: left; /* Facultatif : ajuste l'alignement */
+    background-color: transparent; 
+    color: black; 
+    padding: 0; 
+    border-radius: 0; 
+    margin: 20px 0; 
+    text-align: left;
 }
 
 
