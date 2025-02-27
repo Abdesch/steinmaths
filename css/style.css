@@ -1,23 +1,22 @@
-/* Conteneur global pour centrer la navigation */
+/* Conteneur global pour centrer la navigation */ 
 .nav-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #0D47A1; /* Déplacé la couleur ici */
+    background-color: #EDE7F6; /* Fond clair pour tester */
     padding: 10px 0;
 }
 
 /* Style du menu principal */
 nav {
-    /* background-color: #0D47A1;  Supprimé car la couleur est maintenant dans .nav-container */
+    background-color: #0D47A1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    /* max-width: 1200px;   Supprimé pour permettre l'extension sur toute la largeur */
-    width: 100%; /* Ajouté pour prendre toute la largeur disponible */
+    max-width: 1200px; /* Largeur fixe centrée */
     margin: 0 auto;
-    border-radius: 0px; /* Supprimer l'arrondi des bords, ou ajustez comme vous voulez */
+    border-radius: 8px; /* Arrondir légèrement les bords */
 }
 
 /* Style de la liste de navigation */
@@ -117,14 +116,16 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    background-color: transparent; 
-    color: black; 
-    padding: 0; 
-    border-radius: 0; 
-    margin: 20px 0; 
-    text-align: left;
+    width: fit-content;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    background-color: #f0f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
-
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
