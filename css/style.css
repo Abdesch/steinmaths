@@ -1,12 +1,25 @@
+/* Conteneur global pour centrer la navigation */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #EDE7F6; /* Fond clair pour tester */
+    padding: 10px 0;
+}
+
 /* Style du menu principal */
 nav {
     background-color: #0D47A1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 10px 20px;
+    max-width: 1200px; /* Largeur fixe centrée */
+    margin: 0 auto;
+    border-radius: 8px; /* Arrondir légèrement les bords */
 }
 
+/* Style de la liste de navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,6 +41,7 @@ nav a {
     font-size: 16px;
 }
 
+/* Centrage et espacement des icônes sociales */
 .social-icons {
     display: flex;
     align-items: center;
@@ -41,6 +55,7 @@ nav a {
     font-size: 20px;
 }
 
+/* Style de l'icône de recherche */
 .search-icon {
     color: white;
     font-size: 20px;
@@ -48,6 +63,7 @@ nav a {
     margin-right: 20px;
 }
 
+/* Dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -100,8 +116,8 @@ nav ul .dropdown {
 
 /* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    width: fit-content; /* Ajuste la largeur au contenu */
-    margin: 20px auto; /* Marge haut et bas, centrage horizontal */
+    width: fit-content;
+    margin: 20px auto;
     display: block;
     text-align: center;
     background-color: #f0f;
@@ -113,20 +129,19 @@ nav ul .dropdown {
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
-    width: 1693px; /* Largeur fixe pour le tableau */
+    width: 1693px;
     border-collapse: collapse;
     margin-bottom: 10px;
     table-layout: fixed;
     border: 2px solid red;
-    margin: 0 auto; /* Centrage du tableau */
+    margin: 0 auto;
 }
 
 /* Ajustement des lignes du tableau */
 .section-table tr {
-    border-bottom: 2px solid red; /* Séparation entre les lignes */
+    border-bottom: 2px solid red;
 }
 
-/* Suppression de la bordure rouge sur la dernière ligne */
 .section-table tr:last-child {
     border-bottom: none;
 }
@@ -166,34 +181,33 @@ nav ul .dropdown {
     margin-left: 5px;
 }
 
-/* Style pour l'en-tête des sections (summary) */
+/* Style pour l'en-tête des sections */
 .section-container summary {
     cursor: pointer;
     padding: 10px;
     outline: none;
-    background-color: transparent; /* Suppression du fond rose */
-    color: black; /* Texte en noir */
-    text-decoration: underline; /* Ajoute un soulignement */
-    text-decoration-color: black;  /* Couleur du soulignement noir */
-    border-bottom: 1px solid #ccc; /* Ajoute une bordure inférieure grise */
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+    border-bottom: 1px solid #ccc;
 }
 
-/* Style de l'en-tête de la section ouverte (summary ouvert) */
 details[open] > summary {
-    color: red;  /* Couleur rouge du texte au clic */
-    text-decoration-color: red;  /* Couleur rouge du soulignement au clic */
+    color: red;
+    text-decoration-color: red;
 }
 
-/* NEW CSS Styles - Appended to the end */
+/* Centrage de la section d'accueil */
 #new-welcome {
     text-align: center;
     margin: 20px 0;
 }
 
 .welcome-title {
-    font-size: 3em;  /* Adjust size as needed */
+    font-size: 3em;
     font-weight: bold;
-    color: #e44d26; /* or your preferred color */
+    color: #e44d26;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -202,7 +216,7 @@ details[open] > summary {
 }
 
 .slider img {
-    width: 200px;  /* Adjust size */
+    width: 200px;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -214,7 +228,7 @@ details[open] > summary {
     width: 150px;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #9c27b0;  /* Your purple color */
+    background-color: #9c27b0;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -222,7 +236,7 @@ details[open] > summary {
 }
 
 .read-more-button:hover {
-    background-color: #7b1fa2; /* Darker purple */
+    background-color: #7b1fa2;
 }
 
 #videos {
@@ -231,11 +245,12 @@ details[open] > summary {
 
 /* Empêcher le défilement horizontal */
 body {
-    overflow-x: hidden; /* Supprime la barre de défilement horizontale */
+    overflow-x: hidden;
 }
 
 /* Ajuster les éléments qui dépassent */
 .section-table {
-    max-width: 100%; /* Empêche le tableau de dépasser la largeur de l'écran */
+    max-width: 100%;
     overflow-x: auto;
 }
+
