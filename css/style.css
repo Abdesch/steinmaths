@@ -114,23 +114,22 @@ nav ul .dropdown {
     padding: 20px;
 }
 
-/* Ajustement de la largeur des titres (bandeaux roses) */
+/* Ajustement de la largeur des titres */
 #2bacseco-content h2 {
-    display: inline-block; /* Ajuste la largeur selon le texte */
-    padding: 10px 20px;
-    background-color: #f0f; /* Rose */
-    color: white;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+    width: fit-content;
     margin: 20px auto;
+    display: block;
+    text-align: center;
+    background-color: #f0f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
-    width: 100%;
-    max-width: 1693px;
+    width: 1693px;
     border-collapse: collapse;
     margin-bottom: 10px;
     table-layout: fixed;
