@@ -116,7 +116,28 @@ nav ul .dropdown {
 
 
 
+.bandeau {
+  background-color: #f9d9ea; /* Couleur rose pâle, similaire à celle du site */
+  color: #000; /* Couleur du texte : noir */
+  padding: 10px 20px; /* Espacement intérieur : 10px en haut/bas, 20px à gauche/droite */
+  margin: 20px 0; /* Marge extérieure : 20px en haut/bas, 0 à gauche/droite */
+  border-radius: 5px; /* Bords arrondis (optionnel) */
+  font-size: 1.2em; /* Taille de la police (ajuster selon votre préférence) */
+  font-weight: bold; /* Texte en gras */
+  text-align: center; /* Centrer le texte (comme sur le site) */
+  border: 1px solid #e9b4c7; /* Fine bordure pour un effet plus propre */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre portée pour un effet de relief */
+}
 
+/* Optionnel : Style pour les liens à l'intérieur du bandeau (si vous en avez) */
+.bandeau a {
+  color: #007bff; /* Couleur des liens : bleu (exemple) */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+.bandeau a:hover {
+  text-decoration: underline; /* Souligne au survol */
+}
 
 
 
