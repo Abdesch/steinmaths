@@ -18,4 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+
+    // ----- AJOUT DU DÉFILEMENT AUTOMATIQUE -----
+    const carousel = document.querySelector('.carousel-container'); // Sélection du conteneur du carrousel
+    const slides = document.querySelectorAll('.carousel-container img'); // Sélection des images
+    let index = 0; // Position actuelle de l'image
+
+    function showSlide() {
+        index++;
+        if (index >= slides.length) index = 0; // Revient à la première image après la dernière
+        carousel.style.transform = `translateX(${-index * 100}%)`; // Déplace le carrousel
+    }
+
+    setInterval(showSlide, 3000); // Défilement automatique toutes les 3 secondes
 });
