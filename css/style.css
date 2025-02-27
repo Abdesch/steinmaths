@@ -118,10 +118,11 @@ nav ul .dropdown {
     color: white; /* Couleur du texte en blanc */
     padding: 10px; /* Espacement interne */
     text-align: left; /* Aligné à gauche */
-    margin-top: 200px;  /* Espace au-dessus */
-    margin-bottom: 200px; /* Espace en dessous */
+    padding-left: 1005px; /* Ajout d'un léger espace à gauche */
+    margin-top: 2000px;  /* Espace au-dessus */
+    margin-bottom: 2000px; /* Espace en dessous */
     width: fit-content; /* Ajuste la largeur au texte */
-    margin: 0; /* Centre l'élément horizontalement */
+    /*margin: 0; */ /* Centre l'élément horizontalement */
     border-radius: 5px; /* Optionnel : arrondi des bords */
 
 }
