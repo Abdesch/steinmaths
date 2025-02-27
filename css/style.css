@@ -1,24 +1,15 @@
-/* Appliquer une couleur de fond à toute la page */
-body {
-    background-color: #0D47A1; /* Fond bleu */
-    color: white; /* Texte en blanc pour plus de lisibilité */
-    overflow-x: hidden; /* Empêcher le défilement horizontal */
-    min-height: 100vh; /* Forcer l'affichage du fond sur toute la hauteur de la page */
-    margin: 0; /* Supprimer les marges par défaut */
-    padding: 0;
-}
-
 /* Conteneur global pour centrer la navigation */
 .nav-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: inherit; /* Utiliser la couleur de fond du body */
+    background-color: #EDE7F6; /* Fond clair pour tester */
     padding: 10px 0;
 }
 
 /* Style du menu principal */
 nav {
+    background-color: #0D47A1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,15 +17,6 @@ nav {
     max-width: 1200px; /* Largeur fixe centrée */
     margin: 0 auto;
     border-radius: 8px; /* Arrondir légèrement les bords */
-    width: 100%;
-}
-
-/* Centrer uniquement l'icône de recherche et "Accueil" */
-.nav-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
 }
 
 /* Style de la liste de navigation */
@@ -43,7 +25,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: transparent;
+    justify-content: flex-start;
+    background-color: #1E3A8A;
 }
 
 nav li {
@@ -58,15 +41,7 @@ nav a {
     font-size: 16px;
 }
 
-/* Icône de recherche */
-.search-icon {
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-/* Icônes sociales alignées à droite */
+/* Centrage et espacement des icônes sociales */
 .social-icons {
     display: flex;
     align-items: center;
@@ -78,6 +53,14 @@ nav a {
     text-decoration: none;
     margin-left: 10px;
     font-size: 20px;
+}
+
+/* Style de l'icône de recherche */
+.search-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 /* Dropdown menu */
@@ -131,20 +114,23 @@ nav ul .dropdown {
     padding: 20px;
 }
 
-/* Ajustement de la largeur des titres pour qu'ils s'ajustent au texte */
+/* Ajustement de la largeur des titres (bandeaux roses) */
 #2bacseco-content h2 {
-    display: inline-block; /* Ajuste la largeur au texte */
-    margin: 20px auto; /* Centre horizontalement */
-    background-color: #f0f; /* Conserve la couleur rose */
-    color: white;
+    display: inline-block; /* Ajuste la largeur selon le texte */
     padding: 10px 20px;
+    background-color: #f0f; /* Rose */
+    color: white;
     border-radius: 8px;
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
 }
 
 /* Styles pour l'affichage en tableau unique */
 .section-table {
-    width: 1693px;
+    width: 100%;
+    max-width: 1693px;
     border-collapse: collapse;
     margin-bottom: 10px;
     table-layout: fixed;
@@ -258,10 +244,13 @@ details[open] > summary {
     text-align: center;
 }
 
+/* Empêcher le défilement horizontal */
+body {
+    overflow-x: hidden;
+}
+
 /* Ajuster les éléments qui dépassent */
 .section-table {
     max-width: 100%;
     overflow-x: auto;
 }
-
-
