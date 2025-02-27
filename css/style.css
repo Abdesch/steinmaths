@@ -116,18 +116,7 @@ nav ul .dropdown {
 
 
 
-.bandeau {
-    background-color: #f0f; /* Couleur de fond rose */
-    color: white; /* Couleur du texte en blanc */
-    padding: 10px; /* Espacement interne */
-    text-align: left; /* Alignement du texte à gauche */
-    position: fixed; /* Fixe la position même en zoomant */
-    left: 20px; /* Distance depuis le bord gauche */
-    top: 50px; /* Distance depuis le haut */
-    bottom: 50px; /* Distance depuis le bas */
-    width: fit-content; /* Ajuste la largeur au texte */
-    border-radius: 5px; /* Optionnel : arrondi des bords */
-}
+
 
 
 
